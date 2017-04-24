@@ -1,5 +1,9 @@
 package me.clonalejandro.AmazingHats.commands;
 
+import me.clonalejandro.AmazingHats.hats.blocks.BlockHat;
+import me.clonalejandro.AmazingHats.utils.hatmanager;
+
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -37,6 +41,10 @@ public class Hatscmd implements CommandExecutor{
 
                 }
 
+                if (args[0].equalsIgnoreCase("test")){
+                    hatmanager hatmanager = new hatmanager();
+                    hatmanager.getBlockHat(Bukkit.getPlayer(sender.getName()), BlockHat.Glass);
+                }
 
             }
 

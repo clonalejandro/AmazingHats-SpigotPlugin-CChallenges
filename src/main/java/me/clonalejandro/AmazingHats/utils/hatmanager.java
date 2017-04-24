@@ -1,11 +1,9 @@
-package me.clonalejandro.AmazingHats.listeners;
+package me.clonalejandro.AmazingHats.utils;
 
-import me.clonalejandro.AmazingHats.Main;
+import me.clonalejandro.AmazingHats.hats.blocks.BlockHat;
 
 import org.bukkit.entity.Player;
-import org.bukkit.event.EventHandler;
-import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.inventory.ItemStack;
 
 /**
  * Created by alejandrorioscalera
@@ -23,24 +21,19 @@ import org.bukkit.event.player.PlayerJoinEvent;
  * All rights reserved for clonalejandro ©AmazingHats 2017 / 2018
  */
 
-public class PlayerListeners implements Listener {
+public class hatmanager {
 
 
     /** SMALL CONSTRUCTORS **/
 
-    private final Main plugin;
-
-    public PlayerListeners(Main instance){
-        plugin = instance;
-    }
+    private BlockHat hat;
 
 
     /** REST **/
 
-    @EventHandler
-    public void setHatJoin(PlayerJoinEvent e){
-
-        Player target = e.getPlayer();
+    public void getBlockHat(Player p, BlockHat item) {
+        ItemStack stack = item.getHat();
+        p.getInventory().setHelmet(stack);
     }
 
 
