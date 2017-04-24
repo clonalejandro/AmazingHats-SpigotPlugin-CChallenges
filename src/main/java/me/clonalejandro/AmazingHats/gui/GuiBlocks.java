@@ -229,37 +229,163 @@ public class GuiBlocks implements BlocksInter{
     @Override
     public void Gold_Ore() {
 
+        ItemStack goldore = new ItemStack(Material.GOLD_ORE, 1);
+
+        String description = plugin.getConfig().getString("Gold_Ore.Description");
+        String name = plugin.getConfig().getString("Gold_Ore.Name");
+
+        List<String> lore = new ArrayList<>();
+
+        ItemMeta goldoreMeta = goldore.getItemMeta();
+
+        lore.add(translator(description));
+
+        goldoreMeta.setDisplayName(translator(name));
+        goldoreMeta.setLore(lore);
+
+        goldore.setItemMeta(goldoreMeta);
+
+        //TODO: action
     }
+
 
     @Override
     public void Iron_Ore() {
 
+        ItemStack ironore = new ItemStack(Material.IRON_ORE, 1);
+
+        String description = plugin.getConfig().getString("Iron_Ore.Description");
+        String name = plugin.getConfig().getString("Iron_Ore.Name");
+
+        List<String> lore = new ArrayList<>();
+
+        ItemMeta ironoreMeta = ironore.getItemMeta();
+
+        lore.add(translator(description));
+
+        ironoreMeta.setDisplayName(translator(name));
+        ironoreMeta.setLore(lore);
+
+        ironore.setItemMeta(ironoreMeta);
+
+        //TODO: action
     }
+
 
     @Override
     public void Emerald_Ore() {
 
+        ItemStack emeraldore = new ItemStack(Material.EMERALD_ORE, 1);
+
+        String description = plugin.getConfig().getString("Emerald_Ore.Description");
+        String name = plugin.getConfig().getString("Emerald_Ore.Name");
+
+        List<String> lore = new ArrayList<>();
+
+        ItemMeta emeraldoreMeta = emeraldore.getItemMeta();
+
+        lore.add(translator(description));
+
+        emeraldoreMeta.setDisplayName(translator(name));
+        emeraldoreMeta.setLore(lore);
+
+        emeraldore.setItemMeta(emeraldoreMeta);
+
+        //TODO: action
     }
+
 
     @Override
     public void Redstone_Block() {
 
+        ItemStack redstoneblock = new ItemStack(Material.REDSTONE_BLOCK, 1);
+
+        String description = plugin.getConfig().getString("Redstone_Block.Description");
+        String name = plugin.getConfig().getString("Redstone_Block.Name");
+
+        ItemMeta redstoneblockMeta = redstoneblock.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        redstoneblockMeta.setDisplayName(translator(name));
+        redstoneblockMeta.setLore(lore);
+
+        redstoneblock.setItemMeta(redstoneblockMeta);
+
+        //TODO: action
     }
+
 
     @Override
     public void Lapis_Block() {
 
+        ItemStack lapisblock = new ItemStack(Material.LAPIS_BLOCK, 1);
+
+        String description = plugin.getConfig().getString("Lapis_Block.Description");
+        String name = plugin.getConfig().getString("Lapis_Block.Name");
+
+        ItemMeta lapisblockMeta = lapisblock.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        lapisblockMeta.setDisplayName(translator(name));
+        lapisblockMeta.setLore(lore);
+
+        lapisblock.setItemMeta(lapisblockMeta);
+
+        //TODO: action
     }
+
 
     @Override
     public void Lapis_Ore() {
 
+        ItemStack lapisore = new ItemStack(Material.LAPIS_ORE, 1);
+
+        String description = plugin.getConfig().getString("Lapis_Ore.Description");
+        String name = plugin.getConfig().getString("Lapis_Ore.Name");
+
+        ItemMeta lapisoreMeta = lapisore.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        lapisoreMeta.setDisplayName(translator(name));
+        lapisoreMeta.setLore(lore);
+
+        lapisore.setItemMeta(lapisoreMeta);
+
+        //TODO: action
     }
+
 
     @Override
     public void Redstone_Ore() {
 
+        ItemStack redstoneore = new ItemStack(Material.REDSTONE_ORE, 1);
+
+        String description = plugin.getConfig().getString("Redstone_Ore.Description");
+        String name = plugin.getConfig().getString("Redstone_Ore.Name");
+
+        ItemMeta redstoneoreMeta = redstoneore.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        redstoneoreMeta.setDisplayName(translator(name));
+        redstoneoreMeta.setLore(lore);
+
+        redstoneore.setItemMeta(redstoneoreMeta);
+
+        //TODO: action
     }
+
 
     @Override
     public void Command_Block() {
@@ -410,7 +536,7 @@ public class GuiBlocks implements BlocksInter{
      * @return
      */
 
-    public String translator(String text){
+    private String translator(String text){
         return ChatColor.translateAlternateColorCodes('&', text);
     }
 
