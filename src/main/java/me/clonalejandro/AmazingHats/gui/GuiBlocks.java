@@ -7,6 +7,9 @@ import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by alejandrorioscalera
  * On 24/4/17
@@ -40,45 +43,187 @@ public class GuiBlocks implements BlocksInter{
 
     @Override
     public void Grass() {
+
         ItemStack grass = new ItemStack(Material.GRASS, 1);
+
+        String description = plugin.getConfig().getString("Grass.Description");
+        String name = plugin.getConfig().getString("Grass.Name");
+
+        List<String> lore = new ArrayList<>();
+
         ItemMeta grassMeta = grass.getItemMeta();
 
-        grassMeta.setDisplayName(translator("&eGrass &aHat"));
+        lore.add(translator(description));
+
+        grassMeta.setDisplayName(translator(name));
+        grassMeta.setLore(lore);
+
+
+        grass.setItemMeta(grassMeta);
+
+        //TODO: action
     }
+
 
     @Override
     public void Stone() {
 
+        ItemStack stone = new ItemStack(Material.STONE, 1);
+
+        String description = plugin.getConfig().getString("Stone.Description");
+        String name = plugin.getConfig().getString("Stone.Name");
+
+        List<String> lore = new ArrayList<>();
+
+        ItemMeta stoneMeta = stone.getItemMeta();
+
+        lore.add(translator(description));
+
+        stoneMeta.setDisplayName(translator(name));
+        stoneMeta.setLore(lore);
+
+
+        stone.setItemMeta(stoneMeta);
+
+        //TODO: action
     }
+
 
     @Override
     public void Diamond_Block() {
 
+        ItemStack diamondblock = new ItemStack(Material.DIAMOND_BLOCK, 1);
+
+        String description = plugin.getConfig().getString("Diamond_Block.Description");
+        String name = plugin.getConfig().getString("Diamond_Block.Name");
+
+        List<String> lore = new ArrayList<>();
+
+        ItemMeta diamondblockMeta = diamondblock.getItemMeta();
+
+        lore.add(translator(description));
+
+        diamondblockMeta.setDisplayName(translator(name));
+        diamondblockMeta.setLore(lore);
+
+
+        diamondblock.setItemMeta(diamondblockMeta);
+
+        //TODO: action
     }
+
 
     @Override
     public void Gold_Block() {
 
+        ItemStack goldblock = new ItemStack(Material.GOLD_BLOCK, 1);
+
+        String description = plugin.getConfig().getString("Gold_Block.Description");
+        String name = plugin.getConfig().getString("Gold_Block.Name");
+
+        List<String> lore = new ArrayList<>();
+
+        ItemMeta goldblockMeta = goldblock.getItemMeta();
+
+        lore.add(translator(description));
+
+        goldblockMeta.setDisplayName(translator(name));
+        goldblockMeta.setLore(lore);
+
+        goldblock.setItemMeta(goldblockMeta);
+
+        //TODO: action
     }
+
 
     @Override
     public void Iron_Block() {
 
+        ItemStack ironblock = new ItemStack(Material.IRON_BLOCK, 1);
+
+        String description = plugin.getConfig().getString("Iron_Block.Description");
+        String name = plugin.getConfig().getString("Iron_Block.Name");
+
+        List<String> lore = new ArrayList<>();
+
+        ItemMeta ironblockMeta = ironblock.getItemMeta();
+
+        lore.add(translator(description));
+
+        ironblockMeta.setDisplayName(translator(name));
+        ironblockMeta.setLore(lore);
+
+        ironblock.setItemMeta(ironblockMeta);
+
+        //TODO: action
     }
+
 
     @Override
     public void Emerald_Block() {
 
+        ItemStack emeraldblock = new ItemStack(Material.EMERALD_BLOCK, 1);
+
+        String description = plugin.getConfig().getString("Emerald_Block.Description");
+        String name = plugin.getConfig().getString("Emerald_Block.Name");
+
+        List<String> lore = new ArrayList<>();
+
+        ItemMeta emeralblockMeta = emeraldblock.getItemMeta();
+
+        lore.add(translator(description));
+
+        emeralblockMeta.setDisplayName(translator(name));
+        emeralblockMeta.setLore(lore);
+
+        emeraldblock.setItemMeta(emeralblockMeta);
+
+        //TODO: action
     }
+
 
     @Override
     public void Beacon() {
 
+        ItemStack beacon = new ItemStack(Material.BEACON, 1);
+
+        String description = plugin.getConfig().getString("Beacon.Description");
+        String name = plugin.getConfig().getString("Beacon.Name");
+
+        List<String> lore = new ArrayList<>();
+
+        ItemMeta beaconMeta = beacon.getItemMeta();
+
+        lore.add(translator(description));
+
+        beaconMeta.setDisplayName(translator(name));
+        beaconMeta.setLore(lore);
+
+        beacon.setItemMeta(beaconMeta);
+
+        //TODO: action
     }
 
     @Override
     public void Diamond_Ore() {
 
+        ItemStack diamondore = new ItemStack(Material.DIAMOND_ORE, 1);
+
+        String description = plugin.getConfig().getString("Diamond_Ore.Description");
+        String name = plugin.getConfig().getString("Diamond_Ore.Name");
+
+        List<String> lore = new ArrayList<>();
+
+        ItemMeta diamondoreMeta = diamondore.getItemMeta();
+
+        lore.add(translator(description));
+
+        diamondoreMeta.setDisplayName(translator(name));
+        diamondoreMeta.setLore(lore);
+
+        diamondore.setItemMeta(diamondoreMeta);
+
+        //TODO: action
     }
 
     @Override

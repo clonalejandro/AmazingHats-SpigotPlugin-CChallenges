@@ -61,9 +61,12 @@ public class HatManager {
         ItemMeta meta = stack.getItemMeta();
         List<String> lore = new ArrayList<>();
 
-        meta.setDisplayName(ChatColor.translateAlternateColorCodes('&', "&b&l" +  hat.toString()));
+        String name = plugin.getConfig().getString(hat.toString() + "." + "Name");
+        String description = plugin.getConfig().getString(hat.toString() + "." + "Description");
 
-        lore.add(ChatColor.translateAlternateColorCodes('&', "&b&lA&d&lm&e&la&f&lz&c&li&a&ln&b&lg&6&lHat>"));
+        meta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
+
+        lore.add(ChatColor.translateAlternateColorCodes('&', "&b&lA&d&lm&e&la&f&lz&c&li&a&ln&b&lg&6&lHat> " + description));
 
         meta.setLore(lore);
 
