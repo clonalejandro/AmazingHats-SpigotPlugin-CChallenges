@@ -1,5 +1,6 @@
 package me.clonalejandro.AmazingHats;
 
+import me.clonalejandro.AmazingHats.commands.Hatscmd;
 import me.clonalejandro.AmazingHats.listeners.PlayerListeners;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -82,7 +83,8 @@ public class Main extends JavaPlugin {
 
 
     private void Commands(){
-        //TODO: Commands
+        getCommand("hat").setExecutor(new Hatscmd());
+        //TODO: more...
     }
 
 

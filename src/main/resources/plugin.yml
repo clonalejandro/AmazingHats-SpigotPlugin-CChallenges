@@ -4,4 +4,8 @@ version: 1.0
 author: clonalejandro
 website: https://clonalejandro.me/lab/#AmazingHats
 description: A plugin open source for CChallenges
-#TODO: Commands
+commands:
+  hat:
+    description: A main core command of hat
+    usage: /<command>
+    aliases: [h, head, skull]

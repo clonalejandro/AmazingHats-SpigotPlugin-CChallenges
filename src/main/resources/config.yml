@@ -1,0 +1,439 @@
+
+hats:               
+
+# Blocks
+
+  Grass:               
+    Use:
+    Name:
+    Description:
+
+
+  Stone:               
+    Use:
+    Name:
+    Description:
+
+  Diamond_Block:               
+    Use:
+    Name:
+    Description:
+
+  Gold_Block:               
+    Use:
+    Name:
+    Description:
+
+  Iron_Block:               
+    Use:
+    Name:
+    Description:
+
+  Emerald_Block:               
+    Use:
+    Name:
+    Description:
+
+  Beacon:               
+    Use:
+    Name:
+    Description:
+
+  Diamond_Ore:               
+    Use:
+    Name:
+    Description:
+
+  Gold_Ore:               
+    Use:
+    Name:
+    Description:
+
+  Iron_Ore:               
+    Use:
+    Name:
+    Description:
+
+  Emerald_Ore:               
+    Use:
+    Name:
+    Description:
+
+  Redstone_Block:               
+    Use:
+    Name:
+    Description:
+
+  Lapis_Block:               
+    Use:
+    Name:
+    Description:
+
+  Lapis_Ore:               
+    Use:
+    Name:
+    Description:
+
+  Glass:               
+    Use:
+    Name:
+    Description:
+
+  Nether_Block:               
+    Use:
+    Name:
+    Description:
+
+  Stone_Brick:               
+    Use:
+    Name:
+    Description:
+
+  Spawner:               
+    Use:
+    Name:
+    Description:
+
+  Anvil:               
+    Use:
+    Name:
+    Description:
+
+  Obsidian:               
+    Use:
+    Name:
+    Description:
+
+  Piston:               
+    Use:
+    Name:
+    Description:
+
+  TNT:               
+    Use:
+    Name:
+    Description:
+
+  Wool:               
+    Use:
+    Name:
+    Description:
+
+  Red_Wool:               
+    Use:
+    Name:
+    Description:
+
+  Blue_Wool:               
+    Use:
+    Name:
+    Description:
+
+  Cyan_Wool:               
+    Use:
+    Name:
+    Description:
+
+  DarkBlue_Wool:               
+    Use:
+    Name:
+    Description:
+
+  Purple_Wool:               
+    Use:
+    Name:
+    Description:
+
+  DarkPurple_Wool:               
+    Use:
+    Name:
+    Description:
+
+  DarkRed_Wool:               
+    Use:
+    Name:
+    Description:
+
+  Gray_Wool:               
+    Use:
+    Name:
+    Description:
+
+  DarkGray_Wool:               
+    Use:
+    Name:
+    Description:
+
+  Green_Wool:               
+    Use:
+    Name:
+    Description:
+
+  DarkGreen_Wool:               
+    Use:
+    Name:
+    Description:
+
+  Black_Wool:               
+    Use:
+    Name:
+    Description:
+
+  Orange_Wool:               
+    Use:
+    Name:
+    Description:
+
+  Yellow_Wool:               
+    Use:
+    Name:
+    Description:
+
+  Cactus:               
+    Use:
+    Name:
+    Description:
+
+  Sand:               
+    Use:
+    Name:
+    Description:
+
+  Crafting_table:               
+    Use:
+    Name:
+    Description:
+
+  Enchanting_table:               
+    Use:
+    Name:
+    Description:
+
+  Chest:               
+    Use:
+    Name:
+    Description:
+
+  Enderchest:               
+    Use:
+    Name:
+    Description:
+
+
+
+# Others
+
+  Notch:               
+    Use:
+    Name:
+    Description:
+
+  Jeff:               
+    Use:
+    Name:
+    Description:
+
+  DinnerBone:               
+    Use:
+    Name:
+    Description:
+
+  clonalejandro:               
+    Use:
+    Name:
+    Description:
+
+  Magical_PvP:               
+    Use:
+    Name:
+    Description:
+
+  md_5:               
+    Use:
+    Name:
+    Description:
+
+  Pikachu:               
+    Use:
+    Name:
+    Description:
+
+  Spider:               
+    Use:
+    Name:
+    Description:
+
+  Zombie:               
+    Use:
+    Name:
+    Description:
+
+  Chicken:               
+    Use:
+    Name:
+    Description:
+
+  Villager:               
+    Use:
+    Name:
+    Description:
+
+  Golem:               
+    Use:
+    Name:
+    Description:
+
+  Snowman:               
+    Use:
+    Name:
+    Description:
+
+  EnderDragon:               
+    Use:
+    Name:
+    Description:
+
+  Witch:               
+    Use:
+    Name:
+    Description:
+
+  CaveSpider:               
+    Use:
+    Name:
+    Description:
+
+  Creeper:               
+    Use:
+    Name:
+    Description:
+
+  Skeleton:               
+    Use:
+    Name:
+    Description:
+
+  Whiter:               
+    Use:
+    Name:
+    Description:
+
+  WhiterSkeleton:               
+    Use:
+    Name:
+    Description:
+
+  Pigman:               
+    Use:
+    Name:
+    Description:
+
+  Slime:               
+    Use:
+    Name:
+    Description:
+
+  Magmacube:               
+    Use:
+    Name:
+    Description:
+
+  Blaze:               
+    Use:
+    Name:
+    Description:
+
+  Jellyfish:               
+    Use:
+    Name:
+    Description:
+
+  Enderman:               
+    Use:
+    Name:
+    Description:
+
+  Squid:               
+    Use:
+    Name:
+    Description:
+
+  Herobrine:               
+    Use:
+    Name:
+    Description:
+
+  Sun:               
+    Use:
+    Name:
+    Description:
+
+  Mario:               
+    Use:
+    Name:
+    Description:
+
+  Luigi:               
+    Use:
+    Name:
+    Description:
+
+  Bowser:               
+    Use:
+    Name:
+    Description:
+
+  Browser:               
+    Use:
+    Name:
+    Description:
+
+  Toad:               
+    Use:
+    Name:
+    Description:
+
+  Duck:               
+    Use:
+    Name:
+    Description:
+
+  Globe:               
+    Use:
+    Name:
+    Description:
+
+  Shark:               
+    Use:
+    Name:
+    Description:
+
+  Dog:               
+    Use:
+    Name:
+    Description:
+
+  Cat:               
+    Use:
+    Name:
+    Description:
+
+  Ocelot:               
+    Use:
+    Name:
+    Description:
+
+  Parrot:               
+    Use:
+    Name:
+    Description:
+
+  Slenderman:               
+    Use:
+    Name:
+    Description:
+
+  Rabbit:               
+    Use:
+    Name:
+    Description:
