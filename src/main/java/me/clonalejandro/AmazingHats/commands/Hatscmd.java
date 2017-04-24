@@ -1,0 +1,53 @@
+package me.clonalejandro.AmazingHats.commands;
+
+import org.bukkit.ChatColor;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+
+/**
+ * Created by alejandrorioscalera
+ * On 24/4/17
+ *
+ * -- SOCIAL NETWORKS --
+ *
+ * GitHub: https://github.com/clonalejandro or @clonalejandro
+ * Website: https://clonalejandro.me/
+ * Twitter: https://twitter.com/clonalejandro11/ or @clonalejandro11
+ * Keybase: https://keybase.io/clonalejandro/
+ *
+ * -- LICENSE --
+ *
+ * All rights reserved for clonalejandro ©AmazingHats 2017 / 2018
+ */
+
+public class Hatscmd implements CommandExecutor{
+
+
+    /** REST **/
+
+    @Override
+    public boolean onCommand(CommandSender sender, Command cmd, String arg, String[] args){
+
+        if (cmd.getName().equalsIgnoreCase("hat")){
+
+            if (args.length > 0){
+
+                if (args[0].equalsIgnoreCase("list")){
+
+                }
+
+
+            }
+
+            if (args.length == 0){
+                sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&c&lAmazingHats> &finvalid format use: &b/hat &e<type>"));
+            }
+
+        }
+
+        return true;
+    }
+
+
+}

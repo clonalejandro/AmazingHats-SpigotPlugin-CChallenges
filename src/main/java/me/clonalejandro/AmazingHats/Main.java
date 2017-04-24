@@ -1,5 +1,6 @@
 package me.clonalejandro.AmazingHats;
 
+import me.clonalejandro.AmazingHats.listeners.PlayerListeners;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.PluginManager;
@@ -68,18 +69,19 @@ public class Main extends JavaPlugin {
 
     /** REST **/
 
-    public void Config(){
+    private void Config(){
         saveDefaultConfig();
     }
 
 
-    public void Events(){
+    private void Events(){
         PluginManager pm = instance.getServer().getPluginManager();
+        pm.registerEvents(new PlayerListeners(instance), instance);
         //TODO: Listeners
     }
 
 
-    public void Commands(){
+    private void Commands(){
         //TODO: Commands
     }
 
