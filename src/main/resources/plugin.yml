@@ -1,0 +1,7 @@
+main: me.clonalejandro.AmazingHats.Main
+name: AmazingHats
+version: 1.0
+author: clonalejandro
+website: https://clonalejandro.me/lab/#AmazingHats
+description: A plugin open source for CChallenges
+#TODO: Commands
