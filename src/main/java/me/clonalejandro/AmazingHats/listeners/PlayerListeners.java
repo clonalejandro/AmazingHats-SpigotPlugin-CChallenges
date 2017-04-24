@@ -2,10 +2,11 @@ package me.clonalejandro.AmazingHats.listeners;
 
 import me.clonalejandro.AmazingHats.Main;
 
-import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.event.inventory.InventoryClickEvent;
+
+import java.util.List;
 
 /**
  * Created by alejandrorioscalera
@@ -38,9 +39,12 @@ public class PlayerListeners implements Listener {
     /** REST **/
 
     @EventHandler
-    public void setHatJoin(PlayerJoinEvent e){
+    public void preventHat(InventoryClickEvent e){
+        List<String> target = e.getWhoClicked().getInventory().getHelmet().getItemMeta().getLore();
 
-        Player target = e.getPlayer();
+        String serial = "&b&lA&d&lm&e&la&f&lz&c&li&a&ln&b&lg&6&lHat>";
+
+        if (target.contains(serial)) e.setCancelled(true);
     }
 
 

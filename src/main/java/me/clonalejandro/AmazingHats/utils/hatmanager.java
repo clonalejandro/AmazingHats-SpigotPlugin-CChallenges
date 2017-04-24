@@ -1,9 +1,16 @@
 package me.clonalejandro.AmazingHats.utils;
 
+import me.clonalejandro.AmazingHats.Main;
 import me.clonalejandro.AmazingHats.hats.blocks.BlockHat;
 
+import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 /**
  * Created by alejandrorioscalera
@@ -26,14 +33,82 @@ public class hatmanager {
 
     /** SMALL CONSTRUCTORS **/
 
-    private BlockHat hat;
+    private final Main plugin;
+
+    public hatmanager(Main instance){
+        plugin = instance;
+    }
+
+    private static HashMap<Player, Boolean> isHat = new HashMap<>();
+
+    private boolean hHat;
 
 
     /** REST **/
 
-    public void getBlockHat(Player p, BlockHat item) {
-        ItemStack stack = item.getHat();
-        p.getInventory().setHelmet(stack);
+    /**
+     *
+     * @param player
+     * @param hat
+     */
+
+    public void setBlockHat(Player player, BlockHat hat) {
+
+        ItemStack helmet = player.getInventory().getHelmet();
+        ItemStack stack = hat.getHat();
+
+        ItemMeta meta = stack.getItemMeta();
+        List<String> lore = new ArrayList<>();
+
+        meta.setDisplayName(ChatColor.translateAlternateColorCodes('&', plugin.name));
+
+        lore.add(ChatColor.translateAlternateColorCodes('&', "&b&lA&d&lm&e&la&f&lz&c&li&a&ln&b&lg&6&lHat> " + plugin.description));
+
+        meta.setLore(lore);
+
+        stack.setItemMeta(meta);
+
+        player.getInventory().addItem(helmet);
+        player.getInventory().setHelmet(stack);
+
+        isHat.put(player, true);
+    }
+
+
+    /**
+     *
+     * @param player
+     * @return
+     */
+
+    public ItemStack getHat(Player player){
+
+        ItemStack helmet = player.getInventory().getHelmet();
+
+        if (helmet != null)
+            if (isHat.containsKey(player)) hHat = true;
+            else hHat = false;
+        else hHat = false;
+
+        if (hHat) return helmet;
+        else return null;
+    }
+
+
+    /**
+     *
+     * @param player
+     */
+
+    public void removeHat(Player player){
+
+        ItemStack helmet = getHat(player);
+
+        if (hHat){
+            player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&a&lAmazingHats> &fYour hat has been removed"));
+            player.getInventory().remove(helmet);
+        }
+        else player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&c&lAmazingHats> &fYou don't have any hat"));
     }
 
 

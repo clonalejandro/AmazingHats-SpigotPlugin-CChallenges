@@ -1,7 +1,12 @@
 package me.clonalejandro.AmazingHats;
 
 import me.clonalejandro.AmazingHats.commands.Hatscmd;
+import me.clonalejandro.AmazingHats.gui.HatGui;
+import me.clonalejandro.AmazingHats.hats.All;
+import me.clonalejandro.AmazingHats.hats.blocks.BlockHat;
 import me.clonalejandro.AmazingHats.listeners.PlayerListeners;
+import me.clonalejandro.AmazingHats.utils.hatmanager;
+
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.PluginManager;
@@ -29,6 +34,17 @@ public class Main extends JavaPlugin {
     /** SMALL CONSTRUCTORS **/
 
     public static Main instance;
+
+    private hatmanager hatmanager;
+    private BlockHat blockHat;
+    private Hatscmd hatscmd;
+    private All all;
+    private HatGui hatGui;
+
+    public String name;
+    public String description;
+
+    public boolean Use;
 
 
     /** REST **/
@@ -71,7 +87,25 @@ public class Main extends JavaPlugin {
     /** REST **/
 
     private void Config(){
-        saveDefaultConfig();
+
+        try {
+
+            saveDefaultConfig();
+
+            String fhatName = getAll().getHatName();
+
+            Use = getConfig().getBoolean(fhatName + "." + "Use");
+            name = getConfig().getString(fhatName + "." + "Name");
+            description = getConfig().getString(fhatName + "." + "Description");
+
+            Bukkit.getConsoleSender().sendMessage(ChatColor.AQUA + "AmazingHats> " + ChatColor.DARK_GREEN + "config loaded");
+        } catch (Exception ex){
+
+            ex.printStackTrace();
+            Bukkit.getConsoleSender().sendMessage(ChatColor.AQUA + "AmazingHats> " + ChatColor.YELLOW + "several error in config");
+
+            instance = null;
+        }
     }
 
 
@@ -83,12 +117,33 @@ public class Main extends JavaPlugin {
 
 
     private void Commands(){
-        getCommand("hat").setExecutor(new Hatscmd());
+        getCommand("hat").setExecutor(new Hatscmd(instance));
         //TODO: more...
     }
 
 
     /** OTHERS **/
 
+    public hatmanager getHatmanager(){
+        return hatmanager;
+    }
+
+    public BlockHat getBlockHat(){
+        return blockHat;
+    }
+
+    public Hatscmd getHatscmd(){
+        return hatscmd;
+    }
+
+    public All getAll(){
+        return all;
+    }
+
+    public HatGui getHatGui(){
+        return hatGui;
+    }
+
+    //TODO...
 
 }

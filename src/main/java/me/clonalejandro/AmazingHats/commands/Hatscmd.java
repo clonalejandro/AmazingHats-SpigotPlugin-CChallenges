@@ -1,5 +1,6 @@
 package me.clonalejandro.AmazingHats.commands;
 
+import me.clonalejandro.AmazingHats.Main;
 import me.clonalejandro.AmazingHats.hats.blocks.BlockHat;
 import me.clonalejandro.AmazingHats.utils.hatmanager;
 
@@ -28,6 +29,15 @@ import org.bukkit.command.CommandSender;
 public class Hatscmd implements CommandExecutor{
 
 
+    /** SMALL CONSTRUCTORS **/
+
+    private final Main plugin;
+
+    public Hatscmd(Main instance){
+        plugin = instance;
+    }
+
+
     /** REST **/
 
     @Override
@@ -42,8 +52,8 @@ public class Hatscmd implements CommandExecutor{
                 }
 
                 if (args[0].equalsIgnoreCase("test")){
-                    hatmanager hatmanager = new hatmanager();
-                    hatmanager.getBlockHat(Bukkit.getPlayer(sender.getName()), BlockHat.Glass);
+                    hatmanager hatmanager = new hatmanager(plugin);
+                    hatmanager.setBlockHat(Bukkit.getPlayer(sender.getName()), BlockHat.Glass);
                 }
 
             }
