@@ -390,41 +390,184 @@ public class GuiBlocks implements BlocksInter{
     @Override
     public void Command_Block() {
 
+        ItemStack commandblock = new ItemStack(Material.COMMAND, 1);
+
+        String description = plugin.getConfig().getString("Command_Block.Description");
+        String name = plugin.getConfig().getString("Command_Block.Name");
+
+        ItemMeta commandblockMeta = commandblock.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        commandblockMeta.setDisplayName(translator(name));
+        commandblockMeta.setLore(lore);
+
+        commandblock.setItemMeta(commandblockMeta);
+
+        //TODO: action
     }
+
 
     @Override
     public void Glass() {
 
+        ItemStack glass = new ItemStack(Material.GLASS, 1);
+
+        String description = plugin.getConfig().getString("Glass.Description");
+        String name = plugin.getConfig().getString("Glass.Name");
+
+        ItemMeta glassMeta = glass.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        glassMeta.setDisplayName(translator(name));
+        glassMeta.setLore(lore);
+
+        glass.setItemMeta(glassMeta);
+
+        //TODO: action
     }
+
 
     @Override
     public void Spawner() {
 
+        ItemStack spawner = new ItemStack(Material.MOB_SPAWNER, 1);
+
+        String description = plugin.getConfig().getString("Spawner.Description");
+        String name = plugin.getConfig().getString("Spawner.Name");
+
+        ItemMeta spawnerMeta = spawner.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        spawnerMeta.setDisplayName(translator(name));
+        spawnerMeta.setLore(lore);
+
+        spawner.setItemMeta(spawnerMeta);
+
+        //TODO: action
     }
+
 
     @Override
     public void Anvil() {
 
+        ItemStack anvil = new ItemStack(Material.ANVIL, 1);
+
+        String description = plugin.getConfig().getString("Anvil.Description");
+        String name = plugin.getConfig().getString("Anvil.Name");
+
+        ItemMeta anvilMeta = anvil.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        anvilMeta.setDisplayName(translator(name));
+        anvilMeta.setLore(lore);
+
+        anvil.setItemMeta(anvilMeta);
+
+        //TODO: action
     }
+
 
     @Override
     public void Obsidian() {
 
+        ItemStack obsidian = new ItemStack(Material.OBSIDIAN, 1);
+
+        String description = plugin.getConfig().getString("Obsidian.Description");
+        String name = plugin.getConfig().getString("Obsidian.Name");
+
+        ItemMeta obsidianMeta = obsidian.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        obsidianMeta.setDisplayName(translator(name));
+        obsidianMeta.setLore(lore);
+
+        obsidian.setItemMeta(obsidianMeta);
+
+        //TODO: action
     }
+
 
     @Override
     public void Piston() {
 
+        ItemStack piston = new ItemStack(Material.PISTON_STICKY_BASE, 1);
+
+        String description = plugin.getConfig().getString("Piston.Description");
+        String name = plugin.getConfig().getString("Piston.Name");
+
+        ItemMeta pistonMeta = piston.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        pistonMeta.setDisplayName(translator(name));
+        pistonMeta.setLore(lore);
+
+        piston.setItemMeta(pistonMeta);
+
+        //TODO: action
     }
+
 
     @Override
     public void TNT() {
 
+        ItemStack tnt = new ItemStack(Material.TNT, 1);
+
+        String description = plugin.getConfig().getString("TNT.Description");
+        String name = plugin.getConfig().getString("TNT.Name");
+
+        ItemMeta tntMeta = tnt.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        tntMeta.setDisplayName(translator(name));
+        tntMeta.setLore(lore);
+
+        tnt.setItemMeta(tntMeta);
+
+        //TODO: action
     }
+
 
     @Override
     public void Wool() {
 
+        ItemStack wool = new ItemStack(Material.WOOL, 1);
+
+        String description = plugin.getConfig().getString("Wool.Description");
+        String name = plugin.getConfig().getString("Wool.Name");
+
+        ItemMeta woolMeta = wool.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        woolMeta.setDisplayName(translator(name));
+        woolMeta.setLore(lore);
+
+        wool.setItemMeta(woolMeta);
+
+        //TODO: action
     }
 
     @Override
