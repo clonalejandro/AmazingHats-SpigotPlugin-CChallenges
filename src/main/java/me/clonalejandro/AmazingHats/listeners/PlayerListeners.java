@@ -1,12 +1,14 @@
 package me.clonalejandro.AmazingHats.listeners;
 
 import me.clonalejandro.AmazingHats.Main;
+import me.clonalejandro.AmazingHats.utils.HatManager;
 
+import org.bukkit.Material;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
-
-import java.util.List;
+import org.bukkit.inventory.ItemStack;
 
 /**
  * Created by alejandrorioscalera
@@ -40,12 +42,22 @@ public class PlayerListeners implements Listener {
 
     @EventHandler
     public void preventHat(InventoryClickEvent e){
-        List<String> target = e.getWhoClicked().getInventory().getHelmet().getItemMeta().getLore();
 
-        String serial = "&b&lA&d&lm&e&la&f&lz&c&li&a&ln&b&lg&6&lHat>";
+        Player p = (Player) e.getWhoClicked();
 
-        if (target.contains(serial)) e.setCancelled(true);
-    }
+        if (p.getInventory().getHelmet() != new ItemStack(Material.AIR) || p.getInventory().getHelmet() != null || e.getInventory().getItem(39) != new ItemStack(Material.AIR) || e.getInventory().getItem(39) != null) {
+            if (HatManager.isHat.containsKey(p)) {
+                if (HatManager.isHat.get(p.getPlayer())) {
+                    if (e.getSlot() == 39) {
+                        if (e.getClick().isShiftClick() || e.getClick().isLeftClick() || e.getClick().isRightClick() || e.getClick().isKeyboardClick()) {
+                            e.setCancelled(true);
+                            p.closeInventory();
+                        }//Click types
+                    }//Slot
+                }//Ishat?
+            }//PreventCrash
+        }
+    }//Method
 
 
 }

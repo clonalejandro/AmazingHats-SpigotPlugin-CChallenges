@@ -1,11 +1,12 @@
 package me.clonalejandro.AmazingHats;
 
 import me.clonalejandro.AmazingHats.commands.Hatscmd;
+import me.clonalejandro.AmazingHats.gui.GuiBlocks;
 import me.clonalejandro.AmazingHats.gui.HatGui;
 import me.clonalejandro.AmazingHats.hats.All;
 import me.clonalejandro.AmazingHats.hats.blocks.BlockHat;
 import me.clonalejandro.AmazingHats.listeners.PlayerListeners;
-import me.clonalejandro.AmazingHats.utils.hatmanager;
+import me.clonalejandro.AmazingHats.utils.HatManager;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -34,12 +35,14 @@ public class Main extends JavaPlugin {
     /** SMALL CONSTRUCTORS **/
 
     public static Main instance;
+    private boolean debug = true;
 
-    private hatmanager hatmanager;
+    private HatManager HatManager;
     private BlockHat blockHat;
     private Hatscmd hatscmd;
     private All all;
     private HatGui hatGui;
+    private GuiBlocks guiBlocks;
 
     public String name;
     public String description;
@@ -92,7 +95,10 @@ public class Main extends JavaPlugin {
 
             saveDefaultConfig();
 
-            String fhatName = getAll().getHatName();
+            String fhatName = "";
+
+            if (debug) fhatName = "Glass";
+            if (!debug) fhatName = getAll().getHatName();
 
             Use = getConfig().getBoolean(fhatName + "." + "Use");
             name = getConfig().getString(fhatName + "." + "Name");
@@ -124,8 +130,8 @@ public class Main extends JavaPlugin {
 
     /** OTHERS **/
 
-    public hatmanager getHatmanager(){
-        return hatmanager;
+    public HatManager getHatManager(){
+        return HatManager;
     }
 
     public BlockHat getBlockHat(){
@@ -142,6 +148,10 @@ public class Main extends JavaPlugin {
 
     public HatGui getHatGui(){
         return hatGui;
+    }
+
+    public GuiBlocks getGuiBlocks(){
+        return guiBlocks;
     }
 
     //TODO...

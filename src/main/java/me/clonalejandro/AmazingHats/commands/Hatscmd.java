@@ -2,7 +2,7 @@ package me.clonalejandro.AmazingHats.commands;
 
 import me.clonalejandro.AmazingHats.Main;
 import me.clonalejandro.AmazingHats.hats.blocks.BlockHat;
-import me.clonalejandro.AmazingHats.utils.hatmanager;
+import me.clonalejandro.AmazingHats.utils.HatManager;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -47,13 +47,14 @@ public class Hatscmd implements CommandExecutor{
 
             if (args.length > 0){
 
-                if (args[0].equalsIgnoreCase("list")){
-
+                if (args[0].equalsIgnoreCase("remove")){
+                    HatManager hatManager = new HatManager(plugin);
+                    hatManager.removeHat(Bukkit.getPlayer(sender.getName()));
                 }
 
                 if (args[0].equalsIgnoreCase("test")){
-                    hatmanager hatmanager = new hatmanager(plugin);
-                    hatmanager.setBlockHat(Bukkit.getPlayer(sender.getName()), BlockHat.Glass);
+                    HatManager HatManager = new HatManager(plugin);
+                    HatManager.setBlockHat(Bukkit.getPlayer(sender.getName()), BlockHat.Glass);
                 }
 
             }

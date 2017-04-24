@@ -4,6 +4,7 @@ import me.clonalejandro.AmazingHats.Main;
 import me.clonalejandro.AmazingHats.hats.blocks.BlockHat;
 
 import org.bukkit.ChatColor;
+import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -28,18 +29,18 @@ import java.util.List;
  * All rights reserved for clonalejandro ©AmazingHats 2017 / 2018
  */
 
-public class hatmanager {
+public class HatManager {
 
 
     /** SMALL CONSTRUCTORS **/
 
     private final Main plugin;
 
-    public hatmanager(Main instance){
+    public HatManager(Main instance){
         plugin = instance;
     }
 
-    private static HashMap<Player, Boolean> isHat = new HashMap<>();
+    public static HashMap<Player, Boolean> isHat = new HashMap<>();
 
     private boolean hHat;
 
@@ -60,15 +61,15 @@ public class hatmanager {
         ItemMeta meta = stack.getItemMeta();
         List<String> lore = new ArrayList<>();
 
-        meta.setDisplayName(ChatColor.translateAlternateColorCodes('&', plugin.name));
+        meta.setDisplayName(ChatColor.translateAlternateColorCodes('&', "&b&l" +  hat.toString()));
 
-        lore.add(ChatColor.translateAlternateColorCodes('&', "&b&lA&d&lm&e&la&f&lz&c&li&a&ln&b&lg&6&lHat> " + plugin.description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', "&b&lA&d&lm&e&la&f&lz&c&li&a&ln&b&lg&6&lHat>"));
 
         meta.setLore(lore);
 
         stack.setItemMeta(meta);
 
-        player.getInventory().addItem(helmet);
+        if (helmet != null) player.getInventory().addItem(helmet);
         player.getInventory().setHelmet(stack);
 
         isHat.put(player, true);
@@ -106,7 +107,8 @@ public class hatmanager {
 
         if (hHat){
             player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&a&lAmazingHats> &fYour hat has been removed"));
-            player.getInventory().remove(helmet);
+            player.getInventory().setHelmet(new ItemStack(Material.AIR));
+            isHat.remove(player);
         }
         else player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&c&lAmazingHats> &fYou don't have any hat"));
     }
