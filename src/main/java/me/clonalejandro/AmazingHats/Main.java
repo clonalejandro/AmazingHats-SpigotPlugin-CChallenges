@@ -35,7 +35,7 @@ public class Main extends JavaPlugin {
     /** SMALL CONSTRUCTORS **/
 
     public static Main instance;
-    private boolean debug = true;
+    private boolean debug = false;
 
     private HatManager HatManager;
     private BlockHat blockHat;
@@ -95,10 +95,11 @@ public class Main extends JavaPlugin {
 
             saveDefaultConfig();
 
-            String fhatName = "";
 
-            if (debug) fhatName = "Glass";
-            if (!debug) fhatName = getAll().getHatName();
+
+          //  if (debug) fhatName = "Glass";
+
+            String fhatName = getAll().getHatName();
 
             Use = getConfig().getBoolean(fhatName + "." + "Use");
             name = getConfig().getString(fhatName + "." + "Name");

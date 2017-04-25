@@ -26,12 +26,12 @@ public class All {
 
     /** REST **/
 
-    public String getHatName(){
+    public static String getHatName(){
 
         String[] prelist = list;
         String flist = "";
 
-        for (int i = 0; i < 85; i++){
+        for (int i = 0; i <= 41; i++){
             flist = prelist[i];
         }
 
@@ -41,7 +41,7 @@ public class All {
 
     /** OTHERS **/
 
-    private String[] list = {
+    private static String[] list = {
             "Grass",
             "Stone",
             "Diamond_Block",

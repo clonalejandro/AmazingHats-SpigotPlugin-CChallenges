@@ -52,9 +52,9 @@ public class GuiBlocks implements BlocksInter{
 
         ItemMeta grassMeta = grass.getItemMeta();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        grassMeta.setDisplayName(translator(name));
+        grassMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         grassMeta.setLore(lore);
 
 
@@ -76,9 +76,9 @@ public class GuiBlocks implements BlocksInter{
 
         ItemMeta stoneMeta = stone.getItemMeta();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        stoneMeta.setDisplayName(translator(name));
+        stoneMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         stoneMeta.setLore(lore);
 
 
@@ -100,9 +100,9 @@ public class GuiBlocks implements BlocksInter{
 
         ItemMeta diamondblockMeta = diamondblock.getItemMeta();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        diamondblockMeta.setDisplayName(translator(name));
+        diamondblockMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         diamondblockMeta.setLore(lore);
 
 
@@ -124,9 +124,9 @@ public class GuiBlocks implements BlocksInter{
 
         ItemMeta goldblockMeta = goldblock.getItemMeta();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        goldblockMeta.setDisplayName(translator(name));
+        goldblockMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         goldblockMeta.setLore(lore);
 
         goldblock.setItemMeta(goldblockMeta);
@@ -147,9 +147,9 @@ public class GuiBlocks implements BlocksInter{
 
         ItemMeta ironblockMeta = ironblock.getItemMeta();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        ironblockMeta.setDisplayName(translator(name));
+        ironblockMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         ironblockMeta.setLore(lore);
 
         ironblock.setItemMeta(ironblockMeta);
@@ -170,9 +170,9 @@ public class GuiBlocks implements BlocksInter{
 
         ItemMeta emeralblockMeta = emeraldblock.getItemMeta();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        emeralblockMeta.setDisplayName(translator(name));
+        emeralblockMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         emeralblockMeta.setLore(lore);
 
         emeraldblock.setItemMeta(emeralblockMeta);
@@ -193,9 +193,9 @@ public class GuiBlocks implements BlocksInter{
 
         ItemMeta beaconMeta = beacon.getItemMeta();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        beaconMeta.setDisplayName(translator(name));
+        beaconMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         beaconMeta.setLore(lore);
 
         beacon.setItemMeta(beaconMeta);
@@ -216,9 +216,9 @@ public class GuiBlocks implements BlocksInter{
 
         ItemMeta diamondoreMeta = diamondore.getItemMeta();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        diamondoreMeta.setDisplayName(translator(name));
+        diamondoreMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         diamondoreMeta.setLore(lore);
 
         diamondore.setItemMeta(diamondoreMeta);
@@ -239,9 +239,9 @@ public class GuiBlocks implements BlocksInter{
 
         ItemMeta goldoreMeta = goldore.getItemMeta();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        goldoreMeta.setDisplayName(translator(name));
+        goldoreMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         goldoreMeta.setLore(lore);
 
         goldore.setItemMeta(goldoreMeta);
@@ -262,9 +262,9 @@ public class GuiBlocks implements BlocksInter{
 
         ItemMeta ironoreMeta = ironore.getItemMeta();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        ironoreMeta.setDisplayName(translator(name));
+        ironoreMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         ironoreMeta.setLore(lore);
 
         ironore.setItemMeta(ironoreMeta);
@@ -285,9 +285,9 @@ public class GuiBlocks implements BlocksInter{
 
         ItemMeta emeraldoreMeta = emeraldore.getItemMeta();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        emeraldoreMeta.setDisplayName(translator(name));
+        emeraldoreMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         emeraldoreMeta.setLore(lore);
 
         emeraldore.setItemMeta(emeraldoreMeta);
@@ -308,9 +308,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        redstoneblockMeta.setDisplayName(translator(name));
+        redstoneblockMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         redstoneblockMeta.setLore(lore);
 
         redstoneblock.setItemMeta(redstoneblockMeta);
@@ -331,9 +331,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        lapisblockMeta.setDisplayName(translator(name));
+        lapisblockMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         lapisblockMeta.setLore(lore);
 
         lapisblock.setItemMeta(lapisblockMeta);
@@ -354,9 +354,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        lapisoreMeta.setDisplayName(translator(name));
+        lapisoreMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         lapisoreMeta.setLore(lore);
 
         lapisore.setItemMeta(lapisoreMeta);
@@ -377,9 +377,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        redstoneoreMeta.setDisplayName(translator(name));
+        redstoneoreMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         redstoneoreMeta.setLore(lore);
 
         redstoneore.setItemMeta(redstoneoreMeta);
@@ -400,9 +400,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        commandblockMeta.setDisplayName(translator(name));
+        commandblockMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         commandblockMeta.setLore(lore);
 
         commandblock.setItemMeta(commandblockMeta);
@@ -423,9 +423,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        glassMeta.setDisplayName(translator(name));
+        glassMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         glassMeta.setLore(lore);
 
         glass.setItemMeta(glassMeta);
@@ -446,9 +446,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        spawnerMeta.setDisplayName(translator(name));
+        spawnerMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         spawnerMeta.setLore(lore);
 
         spawner.setItemMeta(spawnerMeta);
@@ -469,9 +469,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        anvilMeta.setDisplayName(translator(name));
+        anvilMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         anvilMeta.setLore(lore);
 
         anvil.setItemMeta(anvilMeta);
@@ -492,9 +492,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        obsidianMeta.setDisplayName(translator(name));
+        obsidianMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         obsidianMeta.setLore(lore);
 
         obsidian.setItemMeta(obsidianMeta);
@@ -515,9 +515,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        pistonMeta.setDisplayName(translator(name));
+        pistonMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         pistonMeta.setLore(lore);
 
         piston.setItemMeta(pistonMeta);
@@ -538,9 +538,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        tntMeta.setDisplayName(translator(name));
+        tntMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         tntMeta.setLore(lore);
 
         tnt.setItemMeta(tntMeta);
@@ -561,9 +561,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        woolMeta.setDisplayName(translator(name));
+        woolMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         woolMeta.setLore(lore);
 
         wool.setItemMeta(woolMeta);
@@ -584,9 +584,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        redwoolMeta.setDisplayName(translator(name));
+        redwoolMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         redwoolMeta.setLore(lore);
 
         redwool.setItemMeta(redwoolMeta);
@@ -607,9 +607,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        bluewoolMeta.setDisplayName(translator(name));
+        bluewoolMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         bluewoolMeta.setLore(lore);
 
         bluewool.setItemMeta(bluewoolMeta);
@@ -630,9 +630,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        cyanwoolMeta.setDisplayName(translator(name));
+        cyanwoolMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         cyanwoolMeta.setLore(lore);
 
         cyanwool.setItemMeta(cyanwoolMeta);
@@ -653,9 +653,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        purplewoolMeta.setDisplayName(translator(name));
+        purplewoolMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         purplewoolMeta.setLore(lore);
 
         purplewool.setItemMeta(purplewoolMeta);
@@ -676,9 +676,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        greenwoolMeta.setDisplayName(translator(name));
+        greenwoolMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         greenwoolMeta.setLore(lore);
 
         greenwool.setItemMeta(greenwoolMeta);
@@ -699,9 +699,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        orangewoolMeta.setDisplayName(translator(name));
+        orangewoolMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         orangewoolMeta.setLore(lore);
 
         orangewool.setItemMeta(orangewoolMeta);
@@ -722,9 +722,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        yellowwoolMeta.setDisplayName(translator(name));
+        yellowwoolMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         yellowwoolMeta.setLore(lore);
 
         yellowwool.setItemMeta(yellowwoolMeta);
@@ -745,9 +745,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        graywoolMeta.setDisplayName(translator(name));
+        graywoolMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         graywoolMeta.setLore(lore);
 
         graywool.setItemMeta(graywoolMeta);
@@ -768,9 +768,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        darkredwoolMeta.setDisplayName(translator(name));
+        darkredwoolMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         darkredwoolMeta.setLore(lore);
 
         darkredwool.setItemMeta(darkredwoolMeta);
@@ -791,9 +791,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        darkbluewoolMeta.setDisplayName(translator(name));
+        darkbluewoolMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         darkbluewoolMeta.setLore(lore);
 
         darkbluewool.setItemMeta(darkbluewoolMeta);
@@ -814,9 +814,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        darkpurpleMeta.setDisplayName(translator(name));
+        darkpurpleMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         darkpurpleMeta.setLore(lore);
 
         darkpurplewool.setItemMeta(darkpurpleMeta);
@@ -837,9 +837,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        darkgreenwoolMeta.setDisplayName(translator(name));
+        darkgreenwoolMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         darkgreenwoolMeta.setLore(lore);
 
         darkgreenwool.setItemMeta(darkgreenwoolMeta);
@@ -860,9 +860,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        darkgraywoolMeta.setDisplayName(translator(name));
+        darkgraywoolMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         darkgraywoolMeta.setLore(lore);
 
         darkgraywool.setItemMeta(darkgraywoolMeta);
@@ -883,9 +883,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        blackwoolMeta.setDisplayName(translator(name));
+        blackwoolMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         blackwoolMeta.setLore(lore);
 
         blackwool.setItemMeta(blackwoolMeta);
@@ -906,9 +906,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        cactusMeta.setDisplayName(translator(name));
+        cactusMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         cactusMeta.setLore(lore);
 
         cactus.setItemMeta(cactusMeta);
@@ -929,9 +929,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        sandMeta.setDisplayName(translator(name));
+        sandMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         sandMeta.setLore(lore);
 
         sand.setItemMeta(sandMeta);
@@ -952,9 +952,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        craftingtableMeta.setDisplayName(translator(name));
+        craftingtableMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         craftingtableMeta.setLore(lore);
 
         craftingtable.setItemMeta(craftingtableMeta);
@@ -975,9 +975,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        enchantingtableMeta.setDisplayName(translator(name));
+        enchantingtableMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         enchantingtableMeta.setLore(lore);
 
         enchantingtable.setItemMeta(enchantingtableMeta);
@@ -998,9 +998,9 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        chestMeta.setDisplayName(translator(name));
+        chestMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         chestMeta.setLore(lore);
 
         chest.setItemMeta(chestMeta);
@@ -1021,27 +1021,14 @@ public class GuiBlocks implements BlocksInter{
 
         List<String> lore = new ArrayList<>();
 
-        lore.add(translator(description));
+        lore.add(ChatColor.translateAlternateColorCodes('&', description));
 
-        enderchestMeta.setDisplayName(translator(name));
+        enderchestMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         enderchestMeta.setLore(lore);
 
         enderchest.setItemMeta(enderchestMeta);
 
         return enderchest;
-    }
-
-
-    /** OTHERS **/
-
-    /**
-     *
-     * @param text
-     * @return
-     */
-
-    private String translator(String text){
-        return ChatColor.translateAlternateColorCodes('&', text);
     }
 
 

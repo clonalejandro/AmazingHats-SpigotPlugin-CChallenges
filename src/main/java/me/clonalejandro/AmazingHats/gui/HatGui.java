@@ -39,7 +39,7 @@ public class HatGui {
 
     /** REST **/
 
-    public void openGUI(Player p){
+    public  void openGUI(Player p){
 
         Inventory inventory = plugin.getServer().createInventory(null, 54, name);
         GuiBlocks guiBlocks = new GuiBlocks(plugin);

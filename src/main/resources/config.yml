@@ -1,220 +1,220 @@
 
-hats:               
+
 
 # Blocks
 
-  Grass:               
-    Use: true
-    Name: &8Grass
-    Description: &eGrass hat
+Grass: 
+ Use: true
+ Name: &8Grass
+ Description: &eGrass hat
 
 
-  Stone:               
-    Use: true
-    Name: &7Stone
-    Description: &eStone hat
+Stone: 
+ Use: true
+ Name: "&7Stone"
+ Description: "&eStone hat"
 
-  Diamond_Block:               
-    Use: true
-    Name: &bDiamond Block hat
-    Description: &eDiamond Block hat
+Diamond_Block: 
+ Use: true
+ Name: "&bDiamond Block hat"
+ Description: "&eDiamond Block hat"
 
-  Gold_Block:               
-    Use: true
-    Name: &6Gold Block
-    Description: &eGold Block hat
+Gold_Block: 
+ Use: true
+ Name: "&6Gold Block"
+ Description: "&eGold Block hat"
 
-  Iron_Block:               
-    Use: true
-    Name: &f&lIron Block
-    Description: &eIron Block hat
+Iron_Block: 
+ Use: true
+ Name: "&f&lIron Block"
+ Description: "&eIron Block hat"
 
-  Emerald_Block:               
-    Use: true
-    Name: &aEmerald Block
-    Description: &eEmerald Block hat
+Emerald_Block: 
+ Use: true
+ Name: "&aEmerald Block"
+ Description: "&eEmerald Block hat"
 
-  Beacon:               
-    Use: true
-    Name: &bBeacon
-    Description: &eBeacon hat
+Beacon: 
+ Use: true
+ Name: "&bBeacon"
+ Description: "&eBeacon hat"
 
-  Diamond_Ore:               
-    Use: true
-    Name: &3Diamond &9Ore
-    Description: &eDiamond Ore hat
+Diamond_Ore: 
+ Use: true
+ Name: "&3Diamond &9Ore"
+ Description: "&eDiamond Ore hat"
 
-  Gold_Ore:               
-    Use: true
-    Name: &eGold Ore
-    Description: &eGold ore hat
+Gold_Ore: 
+ Use: true
+ Name: "&eGold Ore"
+ Description: "&eGold ore hat"
 
-  Iron_Ore:               
-    Use: true
-    Name: &fIron ore
-    Description: &eIron ore
+Iron_Ore: 
+ Use: true
+ Name: "&fIron ore"
+ Description: "&eIron ore"
 
-  Emerald_Ore:               
-    Use: true
-    Name: &2Emerald Ore
-    Description: &eEmerald Ore hat
+Emerald_Ore: 
+ Use: true
+ Name: "&2Emerald Ore"
+ Description: "&eEmerald Ore hat"
 
-  Redstone_Block:               
-    Use: true
-    Name: &cRedstone Block
-    Description: &eRedstone hat
+Redstone_Block: 
+ Use: true
+ Name: "&cRedstone Block"
+ Description: "&eRedstone hat"
 
-  Lapis_Block:               
-    Use: true
-    Name: &3Lapis Block
-    Description: &eLapis Block hat
+Lapis_Block: 
+ Use: true
+ Name: "&3Lapis Block"
+ Description: "&eLapis Block hat"
 
-  Lapis_Ore:               
-    Use: true
-    Name: &9Lapis Ore
-    Description: &eLapis Ore hat
+Lapis_Ore: 
+ Use: true
+ Name: "&9Lapis Ore"
+ Description: "&eLapis Ore hat"
 
-  Redstone_Ore:
-    Use: true
-    Name: &4Redstone Ore
-    Description: &eRedstone Ore hat
+Redstone_Ore:
+ Use: true
+ Name: "&4Redstone Ore"
+ Description: "&eRedstone Ore hat"
 
-  Command_Block:
-    Use: true
-    Name: &8Command Block
-    Description: &eCommand Block hat
+Command_Block:
+ Use: true
+ Name: "&8Command Block"
+ Description: "&eCommand Block hat"
 
-  Glass:               
-    Use: true
-    Name: &bGlass
-    Description: &eGlass hat
+Glass: 
+ Use: true
+ Name: "&bGlass"
+ Description: "&eGlass hat"
 
-  Spawner:               
-    Use: true
-    Name: &8&lSpawner
-    Description: &eSpawner hat
+Spawner: 
+ Use: true
+ Name: "&8&lSpawner"
+ Description: "&eSpawner hat"
 
-  Anvil:               
-    Use: true
-    Name: &7&lAnvil
-    Description: &eAnvil hat
+Anvil: 
+ Use: true
+ Name: "&7&lAnvil"
+ Description: "&eAnvil hat"
 
-  Obsidian:               
-    Use: true
-    Name: &7Obsidian
-    Description: &eObsidian hat
+Obsidian: 
+ Use: true
+ Name: "&7Obsidian"
+ Description: "&eObsidian hat"
 
-  Piston:               
-    Use: true
-    Name: &ePiston
-    Description: &ePiston hat
+Piston: 
+ Use: true
+ Name: "&ePiston"
+ Description: "&ePiston hat"
 
-  TNT:               
-    Use: true
-    Name: &dTNT
-    Description: &eTNT hat
+TNT: 
+ Use: true
+ Name: "&dTNT"
+ Description: "&eTNT hat"
 
-  Wool:               
-    Use: true
-    Name: &fWool
-    Description: &eWool hat
+Wool: 
+ Use: true
+ Name: "&fWool"
+ Description: "&eWool hat"
 
-  Red_Wool:               
-    Use: true
-    Name: &cRed Wool
-    Description: &eRed Wool hat
+Red_Wool: 
+ Use: true
+ Name: "&cRed Wool"
+ Description: "&eRed Wool hat"
 
-  Blue_Wool:               
-    Use: true
-    Name: &3Blue Wool
-    Description: &eBlue Wool hat
+Blue_Wool: 
+ Use: true
+ Name: "&3Blue Wool"
+ Description: "&eBlue Wool hat"
 
-  Cyan_Wool:               
-    Use: true
-    Name: &bCyan Wool
-    Description: &eCyan Wool hat
+Cyan_Wool: 
+ Use: true
+ Name: "&bCyan Wool"
+ Description: "&eCyan Wool hat"
 
-  Purple_Wool:               
-    Use: true
-    Name: &dPurple Wool
-    Description: &ePurple Wool hat
+Purple_Wool: 
+ Use: true
+ Name: "&dPurple Wool"
+ Description: "&ePurple Wool hat"
 
-  Green_Wool:
-    Use: true
-    Name: &aGreen Wool
-    Description: &eGreen Wool hat
+Green_Wool:
+ Use: true
+ Name: "&aGreen Wool"
+ Description: "&eGreen Wool hat"
 
-  Orange_Wool:
-    Use: true
-    Name: &6Orange Wool
-    Description: &eOrange Wool hat
+Orange_Wool:
+ Use: true
+ Name: "&6Orange Wool"
+ Description: "&eOrange Wool hat"
 
-  Yellow_Wool:
-    Use: true
-    Name: &eYellow Wool
-    Description: &eYellow Wool hat
+Yellow_Wool:
+ Use: true
+ Name: "&eYellow Wool"
+ Description: "&eYellow Wool hat"
 
-  Gray_Wool:
-    Use: true
-    Name: &7Gray Wool
-    Description: &eGray Wool hat
+Gray_Wool:
+ Use: true
+ Name: "&7Gray Wool"
+ Description: "&eGray Wool hat"
 
-  DarkRed_Wool:               
-    Use: true
-    Name: &4DarkRed Wool
-    Description: &eDarkRed Wool
+DarkRed_Wool: 
+ Use: true
+ Name: "&4DarkRed Wool"
+ Description: "&eDarkRed Wool"
 
-  DarkBlue_Wool:
-    Use: true
-    Name: &9DarkBlue Wool
-    Description: &eDark Blue Wool
+DarkBlue_Wool:
+ Use: true
+ Name: "&9DarkBlue Wool"
+ Description: "&eDark Blue Wool"
 
-  DarkPurple_Wool:
-    Use: true
-    Name: &5DarkPurple Wool
-    Description: &eDark Purple hat
+DarkPurple_Wool:
+ Use: true
+ Name: "&5DarkPurple Wool"
+ Description: "&eDark Purple hat"
 
-  DarkGreen_Wool:
-    Use: true
-    Name: &2DarkGreen Wool
-    Description: &eDark Green hat
+DarkGreen_Wool:
+ Use: true
+ Name: "&2DarkGreen Wool"
+ Description: "&eDark Green hat"
 
-  DarkGray_Wool:               
-    Use: true
-    Name: &8DarkGray Wool
-    Description: &eDarkGray Wool hat
+DarkGray_Wool: 
+ Use: true
+ Name: "&8DarkGray Wool"
+ Description: "&eDarkGray Wool hat"
 
-  Black_Wool:
-    Use: true
-    Name: &8&lBlack Wool
-    Description: &eBlack Wool hat
+Black_Wool:
+ Use: true
+ Name: "&8&lBlack Wool"
+ Description: "&eBlack Wool hat"
 
-  Cactus:               
-    Use: true
-    Name: &2Cactus
-    Description: &eCactus hat
+Cactus: 
+ Use: true
+ Name: "&2Cactus"
+ Description: "&eCactus hat"
 
-  Sand:               
-    Use: true
-    Name: &eSand
-    Description: &eSand hat
+Sand: 
+ Use: true
+ Name: "&eSand"
+ Description: "&eSand hat"
 
-  Crafting_table:               
-    Use: true
-    Name: &aCrafting Table
-    Description: &eCrafting Table Hat
+Crafting_table: 
+ Use: true
+ Name: "&aCrafting Table"
+ Description: "&eCrafting Table Hat"
 
-  Enchanting_table:               
-    Use: true
-    Name: &dEnchanting Table
-    Description: &eEnchanting Table
+Enchanting_table: 
+ Use: true
+ Name: "&dEnchanting Table"
+ Description: "&eEnchanting Table"
 
-  Chest:               
-    Use: true
-    Name: &6Chest
-    Description: &eChest Table
+Chest: 
+ Use: true
+ Name: "&6Chest"
+ Description: "&eChest Table"
 
-  Enderchest:               
-    Use: true
-    Name: &5&lEnderchest
-    Description: &eEnderchest hat
+Enderchest: 
+ Use: true
+ Name: "&5&lEnderchest"
+ Description: "&eEnderchest hat"
