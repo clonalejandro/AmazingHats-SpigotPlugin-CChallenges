@@ -1,6 +1,7 @@
 package me.clonalejandro.AmazingHats.commands;
 
 import me.clonalejandro.AmazingHats.Main;
+import me.clonalejandro.AmazingHats.gui.HatGui;
 import me.clonalejandro.AmazingHats.hats.blocks.BlockHat;
 import me.clonalejandro.AmazingHats.utils.HatManager;
 
@@ -55,6 +56,11 @@ public class Hatscmd implements CommandExecutor{
                 if (args[0].equalsIgnoreCase("test")){
                     HatManager HatManager = new HatManager(plugin);
                     HatManager.setBlockHat(Bukkit.getPlayer(sender.getName()), BlockHat.Glass);
+                }
+
+                if (args[0].equalsIgnoreCase("menu")){
+                    HatGui hatGui = new HatGui(plugin);
+                    hatGui.openGUI(Bukkit.getPlayer(sender.getName()));
                 }
 
             }

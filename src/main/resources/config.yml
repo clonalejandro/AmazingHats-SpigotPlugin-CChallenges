@@ -4,436 +4,217 @@ hats:
 # Blocks
 
   Grass:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &8Grass
+    Description: &eGrass hat
 
 
   Stone:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &7Stone
+    Description: &eStone hat
 
   Diamond_Block:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &bDiamond Block hat
+    Description: &eDiamond Block hat
 
   Gold_Block:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &6Gold Block
+    Description: &eGold Block hat
 
   Iron_Block:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &f&lIron Block
+    Description: &eIron Block hat
 
   Emerald_Block:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &aEmerald Block
+    Description: &eEmerald Block hat
 
   Beacon:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &bBeacon
+    Description: &eBeacon hat
 
   Diamond_Ore:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &3Diamond &9Ore
+    Description: &eDiamond Ore hat
 
   Gold_Ore:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &eGold Ore
+    Description: &eGold ore hat
 
   Iron_Ore:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &fIron ore
+    Description: &eIron ore
 
   Emerald_Ore:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &2Emerald Ore
+    Description: &eEmerald Ore hat
 
   Redstone_Block:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &cRedstone Block
+    Description: &eRedstone hat
 
   Lapis_Block:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &3Lapis Block
+    Description: &eLapis Block hat
 
   Lapis_Ore:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &9Lapis Ore
+    Description: &eLapis Ore hat
+
+  Redstone_Ore:
+    Use: true
+    Name: &4Redstone Ore
+    Description: &eRedstone Ore hat
+
+  Command_Block:
+    Use: true
+    Name: &8Command Block
+    Description: &eCommand Block hat
 
   Glass:               
-    Use:
-    Name:
-    Description:
-
-  Nether_Block:               
-    Use:
-    Name:
-    Description:
-
-  Stone_Brick:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &bGlass
+    Description: &eGlass hat
 
   Spawner:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &8&lSpawner
+    Description: &eSpawner hat
 
   Anvil:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &7&lAnvil
+    Description: &eAnvil hat
 
   Obsidian:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &7Obsidian
+    Description: &eObsidian hat
 
   Piston:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &ePiston
+    Description: &ePiston hat
 
   TNT:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &dTNT
+    Description: &eTNT hat
 
   Wool:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &fWool
+    Description: &eWool hat
 
   Red_Wool:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &cRed Wool
+    Description: &eRed Wool hat
 
   Blue_Wool:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &3Blue Wool
+    Description: &eBlue Wool hat
 
   Cyan_Wool:               
-    Use:
-    Name:
-    Description:
-
-  DarkBlue_Wool:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &bCyan Wool
+    Description: &eCyan Wool hat
 
   Purple_Wool:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &dPurple Wool
+    Description: &ePurple Wool hat
 
-  DarkPurple_Wool:               
-    Use:
-    Name:
-    Description:
+  Green_Wool:
+    Use: true
+    Name: &aGreen Wool
+    Description: &eGreen Wool hat
+
+  Orange_Wool:
+    Use: true
+    Name: &6Orange Wool
+    Description: &eOrange Wool hat
+
+  Yellow_Wool:
+    Use: true
+    Name: &eYellow Wool
+    Description: &eYellow Wool hat
+
+  Gray_Wool:
+    Use: true
+    Name: &7Gray Wool
+    Description: &eGray Wool hat
 
   DarkRed_Wool:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &4DarkRed Wool
+    Description: &eDarkRed Wool
 
-  Gray_Wool:               
-    Use:
-    Name:
-    Description:
+  DarkBlue_Wool:
+    Use: true
+    Name: &9DarkBlue Wool
+    Description: &eDark Blue Wool
+
+  DarkPurple_Wool:
+    Use: true
+    Name: &5DarkPurple Wool
+    Description: &eDark Purple hat
+
+  DarkGreen_Wool:
+    Use: true
+    Name: &2DarkGreen Wool
+    Description: &eDark Green hat
 
   DarkGray_Wool:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &8DarkGray Wool
+    Description: &eDarkGray Wool hat
 
-  Green_Wool:               
-    Use:
-    Name:
-    Description:
-
-  DarkGreen_Wool:               
-    Use:
-    Name:
-    Description:
-
-  Black_Wool:               
-    Use:
-    Name:
-    Description:
-
-  Orange_Wool:               
-    Use:
-    Name:
-    Description:
-
-  Yellow_Wool:               
-    Use:
-    Name:
-    Description:
+  Black_Wool:
+    Use: true
+    Name: &8&lBlack Wool
+    Description: &eBlack Wool hat
 
   Cactus:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &2Cactus
+    Description: &eCactus hat
 
   Sand:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &eSand
+    Description: &eSand hat
 
   Crafting_table:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &aCrafting Table
+    Description: &eCrafting Table Hat
 
   Enchanting_table:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &dEnchanting Table
+    Description: &eEnchanting Table
 
   Chest:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &6Chest
+    Description: &eChest Table
 
   Enderchest:               
-    Use:
-    Name:
-    Description:
-
-
-
-# Others
-
-  Notch:               
-    Use:
-    Name:
-    Description:
-
-  Jeff:               
-    Use:
-    Name:
-    Description:
-
-  DinnerBone:               
-    Use:
-    Name:
-    Description:
-
-  clonalejandro:               
-    Use:
-    Name:
-    Description:
-
-  Magical_PvP:               
-    Use:
-    Name:
-    Description:
-
-  md_5:               
-    Use:
-    Name:
-    Description:
-
-  Pikachu:               
-    Use:
-    Name:
-    Description:
-
-  Spider:               
-    Use:
-    Name:
-    Description:
-
-  Zombie:               
-    Use:
-    Name:
-    Description:
-
-  Chicken:               
-    Use:
-    Name:
-    Description:
-
-  Villager:               
-    Use:
-    Name:
-    Description:
-
-  Golem:               
-    Use:
-    Name:
-    Description:
-
-  Snowman:               
-    Use:
-    Name:
-    Description:
-
-  EnderDragon:               
-    Use:
-    Name:
-    Description:
-
-  Witch:               
-    Use:
-    Name:
-    Description:
-
-  CaveSpider:               
-    Use:
-    Name:
-    Description:
-
-  Creeper:               
-    Use:
-    Name:
-    Description:
-
-  Skeleton:               
-    Use:
-    Name:
-    Description:
-
-  Whiter:               
-    Use:
-    Name:
-    Description:
-
-  WhiterSkeleton:               
-    Use:
-    Name:
-    Description:
-
-  Pigman:               
-    Use:
-    Name:
-    Description:
-
-  Slime:               
-    Use:
-    Name:
-    Description:
-
-  Magmacube:               
-    Use:
-    Name:
-    Description:
-
-  Blaze:               
-    Use:
-    Name:
-    Description:
-
-  Jellyfish:               
-    Use:
-    Name:
-    Description:
-
-  Enderman:               
-    Use:
-    Name:
-    Description:
-
-  Squid:               
-    Use:
-    Name:
-    Description:
-
-  Herobrine:               
-    Use:
-    Name:
-    Description:
-
-  Sun:               
-    Use:
-    Name:
-    Description:
-
-  Mario:               
-    Use:
-    Name:
-    Description:
-
-  Luigi:               
-    Use:
-    Name:
-    Description:
-
-  Bowser:               
-    Use:
-    Name:
-    Description:
-
-  Browser:               
-    Use:
-    Name:
-    Description:
-
-  Toad:               
-    Use:
-    Name:
-    Description:
-
-  Duck:               
-    Use:
-    Name:
-    Description:
-
-  Globe:               
-    Use:
-    Name:
-    Description:
-
-  Shark:               
-    Use:
-    Name:
-    Description:
-
-  Dog:               
-    Use:
-    Name:
-    Description:
-
-  Cat:               
-    Use:
-    Name:
-    Description:
-
-  Ocelot:               
-    Use:
-    Name:
-    Description:
-
-  Parrot:               
-    Use:
-    Name:
-    Description:
-
-  Slenderman:               
-    Use:
-    Name:
-    Description:
-
-  Rabbit:               
-    Use:
-    Name:
-    Description:
+    Use: true
+    Name: &5&lEnderchest
+    Description: &eEnderchest hat

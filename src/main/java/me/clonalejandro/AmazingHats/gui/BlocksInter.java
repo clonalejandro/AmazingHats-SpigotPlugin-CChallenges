@@ -1,5 +1,7 @@
 package me.clonalejandro.AmazingHats.gui;
 
+import org.bukkit.inventory.ItemStack;
+
 /**
  * Created by alejandrorioscalera
  * On 24/4/17
@@ -21,91 +23,91 @@ public interface BlocksInter {
 
     /** REST **/
 
-    void Grass();
+    ItemStack Grass();
 
-    void Stone();
+    ItemStack Stone();
 
-    void Diamond_Block();
+    ItemStack Diamond_Block();
 
-    void Gold_Block();
+    ItemStack Gold_Block();
 
-    void Iron_Block();
+    ItemStack Iron_Block();
 
-    void Emerald_Block();
+    ItemStack Emerald_Block();
 
-    void Beacon();
+    ItemStack Beacon();
 
-    void Diamond_Ore();
+    ItemStack Diamond_Ore();
 
-    void Gold_Ore();
+    ItemStack Gold_Ore();
 
-    void Iron_Ore();
+    ItemStack Iron_Ore();
 
-    void Emerald_Ore();
+    ItemStack Emerald_Ore();
 
-    void Redstone_Block();
+    ItemStack Redstone_Block();
 
-    void Lapis_Block();
+    ItemStack Lapis_Block();
 
-    void Lapis_Ore();
+    ItemStack Lapis_Ore();
 
-    void Redstone_Ore();
+    ItemStack Redstone_Ore();
 
-    void Command_Block();
+    ItemStack Command_Block();
 
-    void Glass();
+    ItemStack Glass();
 
-    void Spawner();
+    ItemStack Spawner();
 
-    void Anvil();
+    ItemStack Anvil();
 
-    void Obsidian();
+    ItemStack Obsidian();
 
-    void Piston();
+    ItemStack Piston();
 
-    void TNT();
+    ItemStack TNT();
 
-    void Wool();
+    ItemStack Wool();
 
-    void Red_Wool();
+    ItemStack Red_Wool();
 
-    void Blue_Wool();
+    ItemStack Blue_Wool();
 
-    void Cyan_Wool();
+    ItemStack Cyan_Wool();
 
-    void Purple_Wool();
+    ItemStack Purple_Wool();
 
-    void Green_Wool();
+    ItemStack Green_Wool();
 
-    void Orange_Wool();
+    ItemStack Orange_Wool();
 
-    void Yellow_Wool();
+    ItemStack Yellow_Wool();
 
-    void Gray_Wool();
+    ItemStack Gray_Wool();
 
-    void DarkRed_Wool();
+    ItemStack DarkRed_Wool();
 
-    void DarkBlue_Wool();
+    ItemStack DarkBlue_Wool();
 
-    void DarkPurple_Wool();
+    ItemStack DarkPurple_Wool();
 
-    void DarkGreen_Wool();
+    ItemStack DarkGreen_Wool();
 
-    void DarkGray_Wool();
+    ItemStack DarkGray_Wool();
 
-    void Black_Wool();
+    ItemStack Black_Wool();
 
-    void Cactus();
+    ItemStack Cactus();
 
-    void Sand();
+    ItemStack Sand();
 
-    void Crafting_Table();
+    ItemStack Crafting_Table();
 
-    void Enchanting_Table();
+    ItemStack Enchanting_Table();
 
-    void Chest();
+    ItemStack Chest();
 
-    void Enderchest();
+    ItemStack Enderchest();
 
 
 }

@@ -33,16 +33,15 @@ public class GuiBlocks implements BlocksInter{
 
     private final Main plugin;
 
-    public GuiBlocks(Main instance){
+    GuiBlocks(Main instance){
         plugin = instance;
     }
 
 
     /** REST **/
 
-
     @Override
-    public void Grass() {
+    public ItemStack Grass() {
 
         ItemStack grass = new ItemStack(Material.GRASS, 1);
 
@@ -59,14 +58,14 @@ public class GuiBlocks implements BlocksInter{
         grassMeta.setLore(lore);
 
 
-        grass.setItemMeta(grassMeta);
+       grass.setItemMeta(grassMeta);
 
-        //TODO: action
+       return grass;
     }
 
 
     @Override
-    public void Stone() {
+    public ItemStack Stone() {
 
         ItemStack stone = new ItemStack(Material.STONE, 1);
 
@@ -85,12 +84,12 @@ public class GuiBlocks implements BlocksInter{
 
         stone.setItemMeta(stoneMeta);
 
-        //TODO: action
+        return stone;
     }
 
 
     @Override
-    public void Diamond_Block() {
+    public ItemStack Diamond_Block() {
 
         ItemStack diamondblock = new ItemStack(Material.DIAMOND_BLOCK, 1);
 
@@ -109,12 +108,12 @@ public class GuiBlocks implements BlocksInter{
 
         diamondblock.setItemMeta(diamondblockMeta);
 
-        //TODO: action
+        return diamondblock;
     }
 
 
     @Override
-    public void Gold_Block() {
+    public ItemStack Gold_Block() {
 
         ItemStack goldblock = new ItemStack(Material.GOLD_BLOCK, 1);
 
@@ -132,12 +131,12 @@ public class GuiBlocks implements BlocksInter{
 
         goldblock.setItemMeta(goldblockMeta);
 
-        //TODO: action
+        return goldblock;
     }
 
 
     @Override
-    public void Iron_Block() {
+    public ItemStack Iron_Block() {
 
         ItemStack ironblock = new ItemStack(Material.IRON_BLOCK, 1);
 
@@ -155,12 +154,12 @@ public class GuiBlocks implements BlocksInter{
 
         ironblock.setItemMeta(ironblockMeta);
 
-        //TODO: action
+        return ironblock;
     }
 
 
     @Override
-    public void Emerald_Block() {
+    public ItemStack Emerald_Block() {
 
         ItemStack emeraldblock = new ItemStack(Material.EMERALD_BLOCK, 1);
 
@@ -178,12 +177,12 @@ public class GuiBlocks implements BlocksInter{
 
         emeraldblock.setItemMeta(emeralblockMeta);
 
-        //TODO: action
+        return emeraldblock;
     }
 
 
     @Override
-    public void Beacon() {
+    public ItemStack Beacon() {
 
         ItemStack beacon = new ItemStack(Material.BEACON, 1);
 
@@ -201,11 +200,12 @@ public class GuiBlocks implements BlocksInter{
 
         beacon.setItemMeta(beaconMeta);
 
-        //TODO: action
+        return beacon;
     }
 
+
     @Override
-    public void Diamond_Ore() {
+    public ItemStack Diamond_Ore() {
 
         ItemStack diamondore = new ItemStack(Material.DIAMOND_ORE, 1);
 
@@ -223,11 +223,12 @@ public class GuiBlocks implements BlocksInter{
 
         diamondore.setItemMeta(diamondoreMeta);
 
-        //TODO: action
+        return diamondore;
     }
 
+
     @Override
-    public void Gold_Ore() {
+    public ItemStack Gold_Ore() {
 
         ItemStack goldore = new ItemStack(Material.GOLD_ORE, 1);
 
@@ -245,12 +246,12 @@ public class GuiBlocks implements BlocksInter{
 
         goldore.setItemMeta(goldoreMeta);
 
-        //TODO: action
+        return goldore;
     }
 
 
     @Override
-    public void Iron_Ore() {
+    public ItemStack Iron_Ore() {
 
         ItemStack ironore = new ItemStack(Material.IRON_ORE, 1);
 
@@ -268,12 +269,12 @@ public class GuiBlocks implements BlocksInter{
 
         ironore.setItemMeta(ironoreMeta);
 
-        //TODO: action
+        return ironore;
     }
 
 
     @Override
-    public void Emerald_Ore() {
+    public ItemStack Emerald_Ore() {
 
         ItemStack emeraldore = new ItemStack(Material.EMERALD_ORE, 1);
 
@@ -291,12 +292,12 @@ public class GuiBlocks implements BlocksInter{
 
         emeraldore.setItemMeta(emeraldoreMeta);
 
-        //TODO: action
+        return emeraldore;
     }
 
 
     @Override
-    public void Redstone_Block() {
+    public ItemStack Redstone_Block() {
 
         ItemStack redstoneblock = new ItemStack(Material.REDSTONE_BLOCK, 1);
 
@@ -314,12 +315,12 @@ public class GuiBlocks implements BlocksInter{
 
         redstoneblock.setItemMeta(redstoneblockMeta);
 
-        //TODO: action
+        return redstoneblock;
     }
 
 
     @Override
-    public void Lapis_Block() {
+    public ItemStack Lapis_Block() {
 
         ItemStack lapisblock = new ItemStack(Material.LAPIS_BLOCK, 1);
 
@@ -337,12 +338,12 @@ public class GuiBlocks implements BlocksInter{
 
         lapisblock.setItemMeta(lapisblockMeta);
 
-        //TODO: action
+        return lapisblock;
     }
 
 
     @Override
-    public void Lapis_Ore() {
+    public ItemStack Lapis_Ore() {
 
         ItemStack lapisore = new ItemStack(Material.LAPIS_ORE, 1);
 
@@ -360,12 +361,12 @@ public class GuiBlocks implements BlocksInter{
 
         lapisore.setItemMeta(lapisoreMeta);
 
-        //TODO: action
+        return lapisore;
     }
 
 
     @Override
-    public void Redstone_Ore() {
+    public ItemStack Redstone_Ore() {
 
         ItemStack redstoneore = new ItemStack(Material.REDSTONE_ORE, 1);
 
@@ -383,12 +384,12 @@ public class GuiBlocks implements BlocksInter{
 
         redstoneore.setItemMeta(redstoneoreMeta);
 
-        //TODO: action
+        return redstoneore;
     }
 
 
     @Override
-    public void Command_Block() {
+    public ItemStack Command_Block() {
 
         ItemStack commandblock = new ItemStack(Material.COMMAND, 1);
 
@@ -406,12 +407,12 @@ public class GuiBlocks implements BlocksInter{
 
         commandblock.setItemMeta(commandblockMeta);
 
-        //TODO: action
+        return commandblock;
     }
 
 
     @Override
-    public void Glass() {
+    public ItemStack Glass() {
 
         ItemStack glass = new ItemStack(Material.GLASS, 1);
 
@@ -429,12 +430,12 @@ public class GuiBlocks implements BlocksInter{
 
         glass.setItemMeta(glassMeta);
 
-        //TODO: action
+        return glass;
     }
 
 
     @Override
-    public void Spawner() {
+    public ItemStack Spawner() {
 
         ItemStack spawner = new ItemStack(Material.MOB_SPAWNER, 1);
 
@@ -452,12 +453,12 @@ public class GuiBlocks implements BlocksInter{
 
         spawner.setItemMeta(spawnerMeta);
 
-        //TODO: action
+        return spawner;
     }
 
 
     @Override
-    public void Anvil() {
+    public ItemStack Anvil() {
 
         ItemStack anvil = new ItemStack(Material.ANVIL, 1);
 
@@ -475,12 +476,12 @@ public class GuiBlocks implements BlocksInter{
 
         anvil.setItemMeta(anvilMeta);
 
-        //TODO: action
+        return anvil;
     }
 
 
     @Override
-    public void Obsidian() {
+    public ItemStack Obsidian() {
 
         ItemStack obsidian = new ItemStack(Material.OBSIDIAN, 1);
 
@@ -498,12 +499,12 @@ public class GuiBlocks implements BlocksInter{
 
         obsidian.setItemMeta(obsidianMeta);
 
-        //TODO: action
+        return obsidian;
     }
 
 
     @Override
-    public void Piston() {
+    public ItemStack Piston() {
 
         ItemStack piston = new ItemStack(Material.PISTON_STICKY_BASE, 1);
 
@@ -521,12 +522,12 @@ public class GuiBlocks implements BlocksInter{
 
         piston.setItemMeta(pistonMeta);
 
-        //TODO: action
+        return piston;
     }
 
 
     @Override
-    public void TNT() {
+    public ItemStack TNT() {
 
         ItemStack tnt = new ItemStack(Material.TNT, 1);
 
@@ -544,12 +545,12 @@ public class GuiBlocks implements BlocksInter{
 
         tnt.setItemMeta(tntMeta);
 
-        //TODO: action
+        return tnt;
     }
 
 
     @Override
-    public void Wool() {
+    public ItemStack Wool() {
 
         ItemStack wool = new ItemStack(Material.WOOL, 1);
 
@@ -567,107 +568,467 @@ public class GuiBlocks implements BlocksInter{
 
         wool.setItemMeta(woolMeta);
 
-        //TODO: action
+        return wool;
     }
 
+    
     @Override
-    public void Red_Wool() {
+    public ItemStack Red_Wool() {
 
+        ItemStack redwool = new ItemStack(Material.WOOL, 1, (short) 6);
+
+        String description = plugin.getConfig().getString("Red_Wool.Description");
+        String name = plugin.getConfig().getString("Red_Wool.Name");
+
+        ItemMeta redwoolMeta = redwool.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        redwoolMeta.setDisplayName(translator(name));
+        redwoolMeta.setLore(lore);
+
+        redwool.setItemMeta(redwoolMeta);
+
+        return redwool;
     }
 
-    @Override
-    public void Blue_Wool() {
 
+    @Override
+    public ItemStack Blue_Wool() {
+
+        ItemStack bluewool = new ItemStack(Material.WOOL, 1, (short) 3);
+
+        String description = plugin.getConfig().getString("Blue_Wool.Description");
+        String name = plugin.getConfig().getString("Blue_Wool.Name");
+
+        ItemMeta bluewoolMeta = bluewool.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        bluewoolMeta.setDisplayName(translator(name));
+        bluewoolMeta.setLore(lore);
+
+        bluewool.setItemMeta(bluewoolMeta);
+
+        return bluewool;
     }
 
-    @Override
-    public void Cyan_Wool() {
 
+    @Override
+    public ItemStack Cyan_Wool() {
+
+        ItemStack cyanwool = new ItemStack(Material.WOOL, 1, (short) 9);
+
+        String description = plugin.getConfig().getString("Cyan_Wool.Description");
+        String name = plugin.getConfig().getString("Cyan_Wool.Name");
+
+        ItemMeta cyanwoolMeta = cyanwool.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        cyanwoolMeta.setDisplayName(translator(name));
+        cyanwoolMeta.setLore(lore);
+
+        cyanwool.setItemMeta(cyanwoolMeta);
+
+        return cyanwool;
     }
 
-    @Override
-    public void Purple_Wool() {
 
+    @Override
+    public ItemStack Purple_Wool() {
+
+        ItemStack purplewool = new ItemStack(Material.WOOL, 1, (short) 2);
+
+        String description = plugin.getConfig().getString("Purple_Wool.Description");
+        String name = plugin.getConfig().getString("Purple_Wool.Name");
+
+        ItemMeta purplewoolMeta = purplewool.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        purplewoolMeta.setDisplayName(translator(name));
+        purplewoolMeta.setLore(lore);
+
+        purplewool.setItemMeta(purplewoolMeta);
+
+        return purplewool;
     }
 
-    @Override
-    public void Green_Wool() {
 
+    @Override
+    public ItemStack Green_Wool() {
+
+        ItemStack greenwool = new ItemStack(Material.WOOL, 1, (short) 5);
+
+        String description = plugin.getConfig().getString("Green_Wool.Description");
+        String name = plugin.getConfig().getString("Green_Wool.Name");
+
+        ItemMeta greenwoolMeta = greenwool.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        greenwoolMeta.setDisplayName(translator(name));
+        greenwoolMeta.setLore(lore);
+
+        greenwool.setItemMeta(greenwoolMeta);
+
+        return greenwool;
     }
 
-    @Override
-    public void Orange_Wool() {
 
+    @Override
+    public ItemStack Orange_Wool() {
+
+        ItemStack orangewool = new ItemStack(Material.WOOL, 1, (short) 1);
+
+        String description = plugin.getConfig().getString("Orange_Wool.Description");
+        String name = plugin.getConfig().getString("Orange_Wool.Name");
+
+        ItemMeta orangewoolMeta = orangewool.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        orangewoolMeta.setDisplayName(translator(name));
+        orangewoolMeta.setLore(lore);
+
+        orangewool.setItemMeta(orangewoolMeta);
+
+        return orangewool;
     }
 
-    @Override
-    public void Yellow_Wool() {
 
+    @Override
+    public ItemStack Yellow_Wool() {
+
+        ItemStack yellowwool = new ItemStack(Material.WOOL, 1, (short) 4);
+
+        String description = plugin.getConfig().getString("Yellow_Wool.Description");
+        String name = plugin.getConfig().getString("Yellow_Wool.Name");
+
+        ItemMeta yellowwoolMeta = yellowwool.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        yellowwoolMeta.setDisplayName(translator(name));
+        yellowwoolMeta.setLore(lore);
+
+        yellowwool.setItemMeta(yellowwoolMeta);
+
+        return yellowwool;
     }
 
-    @Override
-    public void Gray_Wool() {
 
+    @Override
+    public ItemStack Gray_Wool() {
+
+        ItemStack graywool = new ItemStack(Material.WOOL, 1, (short) 8);
+
+        String description = plugin.getConfig().getString("Gray_Wool.Description");
+        String name = plugin.getConfig().getString("Gray_Wool.Name");
+
+        ItemMeta graywoolMeta = graywool.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        graywoolMeta.setDisplayName(translator(name));
+        graywoolMeta.setLore(lore);
+
+        graywool.setItemMeta(graywoolMeta);
+
+        return graywool;
     }
 
-    @Override
-    public void DarkRed_Wool() {
 
+    @Override
+    public ItemStack DarkRed_Wool() {
+
+        ItemStack darkredwool = new ItemStack(Material.WOOL, 1, (short) 14);
+
+        String description = plugin.getConfig().getString("DarkRed_Wool.Description");
+        String name = plugin.getConfig().getString("DarkRed_Wool.Name");
+
+        ItemMeta darkredwoolMeta = darkredwool.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        darkredwoolMeta.setDisplayName(translator(name));
+        darkredwoolMeta.setLore(lore);
+
+        darkredwool.setItemMeta(darkredwoolMeta);
+
+        return darkredwool;
     }
 
-    @Override
-    public void DarkBlue_Wool() {
 
+    @Override
+    public ItemStack DarkBlue_Wool() {
+
+        ItemStack darkbluewool = new ItemStack(Material.WOOL, 1, (short) 11);
+
+        String description = plugin.getConfig().getString("DarkBlue_Wool.Description");
+        String name = plugin.getConfig().getString("DarkBlue_Wool.Name");
+
+        ItemMeta darkbluewoolMeta = darkbluewool.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        darkbluewoolMeta.setDisplayName(translator(name));
+        darkbluewoolMeta.setLore(lore);
+
+        darkbluewool.setItemMeta(darkbluewoolMeta);
+
+        return darkbluewool;
     }
 
-    @Override
-    public void DarkPurple_Wool() {
 
+    @Override
+    public ItemStack DarkPurple_Wool() {
+
+        ItemStack darkpurplewool = new ItemStack(Material.WOOL, 1, (short) 10);
+
+        String description = plugin.getConfig().getString("DarkPurple_Wool.Description");
+        String name = plugin.getConfig().getString("DarkPurple_Wool.Name");
+
+        ItemMeta darkpurpleMeta = darkpurplewool.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        darkpurpleMeta.setDisplayName(translator(name));
+        darkpurpleMeta.setLore(lore);
+
+        darkpurplewool.setItemMeta(darkpurpleMeta);
+
+        return darkpurplewool;
     }
 
-    @Override
-    public void DarkGreen_Wool() {
 
+    @Override
+    public ItemStack DarkGreen_Wool() {
+
+        ItemStack darkgreenwool = new ItemStack(Material.WOOL, 1, (short) 13);
+
+        String description = plugin.getConfig().getString("DarkGreen_Wool.Description");
+        String name = plugin.getConfig().getString("DarkGreen_Wool.Name");
+
+        ItemMeta darkgreenwoolMeta = darkgreenwool.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        darkgreenwoolMeta.setDisplayName(translator(name));
+        darkgreenwoolMeta.setLore(lore);
+
+        darkgreenwool.setItemMeta(darkgreenwoolMeta);
+
+        return darkgreenwool;
     }
 
-    @Override
-    public void DarkGray_Wool() {
 
+    @Override
+    public ItemStack DarkGray_Wool() {
+
+        ItemStack darkgraywool = new ItemStack(Material.WOOL, 1, (short) 7);
+
+        String description = plugin.getConfig().getString("DarkGray_Wool.Description");
+        String name = plugin.getConfig().getString("DarkGray_Wool.Name");
+
+        ItemMeta darkgraywoolMeta = darkgraywool.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        darkgraywoolMeta.setDisplayName(translator(name));
+        darkgraywoolMeta.setLore(lore);
+
+        darkgraywool.setItemMeta(darkgraywoolMeta);
+
+        return darkgraywool;
     }
 
-    @Override
-    public void Black_Wool() {
 
+    @Override
+    public ItemStack Black_Wool() {
+
+        ItemStack blackwool = new ItemStack(Material.WOOL, 1, (short) 15);
+
+        String description = plugin.getConfig().getString("Black_Wool.Description");
+        String name = plugin.getConfig().getString("Black_Wool.Name");
+
+        ItemMeta blackwoolMeta = blackwool.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        blackwoolMeta.setDisplayName(translator(name));
+        blackwoolMeta.setLore(lore);
+
+        blackwool.setItemMeta(blackwoolMeta);
+
+        return blackwool;
     }
 
-    @Override
-    public void Cactus() {
 
+    @Override
+    public ItemStack Cactus() {
+
+        ItemStack cactus = new ItemStack(Material.CACTUS, 1);
+
+        String description = plugin.getConfig().getString("Cactus.Description");
+        String name = plugin.getConfig().getString("Cactus.Name");
+
+        ItemMeta cactusMeta = cactus.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        cactusMeta.setDisplayName(translator(name));
+        cactusMeta.setLore(lore);
+
+        cactus.setItemMeta(cactusMeta);
+
+        return cactus;
     }
 
-    @Override
-    public void Sand() {
 
+    @Override
+    public ItemStack Sand() {
+
+        ItemStack sand = new ItemStack(Material.SAND, 1);
+
+        String description = plugin.getConfig().getString("Sand.Description");
+        String name = plugin.getConfig().getString("Sand.Name");
+
+        ItemMeta sandMeta = sand.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        sandMeta.setDisplayName(translator(name));
+        sandMeta.setLore(lore);
+
+        sand.setItemMeta(sandMeta);
+
+        return sand;
     }
 
-    @Override
-    public void Crafting_Table() {
 
+    @Override
+    public ItemStack Crafting_Table() {
+
+        ItemStack craftingtable = new ItemStack(Material.WORKBENCH, 1);
+
+        String description = plugin.getConfig().getString("Crafting_table.Description");
+        String name = plugin.getConfig().getString("Crafting_table.Name");
+
+        ItemMeta craftingtableMeta = craftingtable.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        craftingtableMeta.setDisplayName(translator(name));
+        craftingtableMeta.setLore(lore);
+
+        craftingtable.setItemMeta(craftingtableMeta);
+
+        return craftingtable;
     }
 
-    @Override
-    public void Enchanting_Table() {
 
+    @Override
+    public ItemStack Enchanting_Table() {
+
+        ItemStack enchantingtable = new ItemStack(Material.ENCHANTMENT_TABLE, 1);
+
+        String description = plugin.getConfig().getString("Enchanting_table.Description");
+        String name = plugin.getConfig().getString("Enchanting_table.Name");
+
+        ItemMeta enchantingtableMeta = enchantingtable.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        enchantingtableMeta.setDisplayName(translator(name));
+        enchantingtableMeta.setLore(lore);
+
+        enchantingtable.setItemMeta(enchantingtableMeta);
+
+        return enchantingtable;
     }
 
-    @Override
-    public void Chest() {
 
+    @Override
+    public ItemStack Chest() {
+
+        ItemStack chest = new ItemStack(Material.CHEST, 1);
+
+        String description = plugin.getConfig().getString("Chest.Description");
+        String name = plugin.getConfig().getString("Chest.Name");
+
+        ItemMeta chestMeta = chest.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        chestMeta.setDisplayName(translator(name));
+        chestMeta.setLore(lore);
+
+        chest.setItemMeta(chestMeta);
+
+        return chest;
     }
 
-    @Override
-    public void Enderchest() {
 
+    @Override
+    public ItemStack Enderchest() {
+
+        ItemStack enderchest = new ItemStack(Material.ENDER_CHEST, 1);
+
+        String description = plugin.getConfig().getString("Enderchest.Description");
+        String name = plugin.getConfig().getString("Enderchest.Name");
+
+        ItemMeta enderchestMeta = enderchest.getItemMeta();
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        enderchestMeta.setDisplayName(translator(name));
+        enderchestMeta.setLore(lore);
+
+        enderchest.setItemMeta(enderchestMeta);
+
+        return enderchest;
     }
 
 
