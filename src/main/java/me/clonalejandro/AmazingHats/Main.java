@@ -150,6 +150,4 @@ public class Main extends JavaPlugin {
         return guiBlocks;
     }
 
-    //TODO...
-
 }
