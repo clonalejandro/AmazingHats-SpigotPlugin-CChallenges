@@ -106,8 +106,6 @@ public class HatManager {
 
     public void removeHat(Player player){
 
-        ItemStack helmet = getHat(player);
-
         if (hHat){
             player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&a&lAmazingHats> &fYour hat has been removed"));
             player.getInventory().setHelmet(new ItemStack(Material.AIR));

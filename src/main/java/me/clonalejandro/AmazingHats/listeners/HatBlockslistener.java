@@ -3,9 +3,9 @@ package me.clonalejandro.AmazingHats.listeners;
 import me.clonalejandro.AmazingHats.Main;
 import me.clonalejandro.AmazingHats.gui.GuiBlocks;
 import me.clonalejandro.AmazingHats.gui.HatGui;
-
 import me.clonalejandro.AmazingHats.hats.blocks.BlockHat;
 import me.clonalejandro.AmazingHats.utils.HatManager;
+
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -45,6 +45,12 @@ public class HatBlockslistener implements Listener{
 
     /** REST **/
 
+    /**
+     *
+     * @param e
+     * @return
+     */
+
     private ItemStack getItem(InventoryClickEvent e){
         return e.getCurrentItem();
     }
@@ -68,6 +74,13 @@ public class HatBlockslistener implements Listener{
             else e.setCancelled(false);
         }
     }
+
+
+    /**
+     *
+     * @param item
+     * @param p
+     */
 
     private void ifs(ItemStack item, Player p){
         GuiBlocks guiBlocks = new GuiBlocks(plugin);
@@ -111,6 +124,12 @@ public class HatBlockslistener implements Listener{
         if (item.getItemMeta().getDisplayName().contains("Redstone Block")){
             HatManager hatManager = new HatManager(plugin);
             hatManager.setBlockHat(p, BlockHat.Redstone_Block);
+            cancelled = true;
+        }
+
+        if (item.getItemMeta().getDisplayName().contains("Beacon")){
+            HatManager hatManager = new HatManager(plugin);
+            hatManager.setBlockHat(p, BlockHat.Beacon);
             cancelled = true;
         }
 
@@ -174,7 +193,160 @@ public class HatBlockslistener implements Listener{
             cancelled = true;
         }
 
-        if ()
+        if (item.getItemMeta().getDisplayName().contains("Anvil")){
+            HatManager hatManager = new HatManager(plugin);
+            hatManager.setBlockHat(p, BlockHat.Anvil);
+            cancelled = true;
+        }
+
+        if (item.getItemMeta().getDisplayName().contains("Obsidian")){
+            HatManager hatManager = new HatManager(plugin);
+            hatManager.setBlockHat(p, BlockHat.Obsidian);
+            cancelled = true;
+        }
+
+        if (item.getItemMeta().getDisplayName().contains("Piston")){
+            HatManager hatManager = new HatManager(plugin);
+            hatManager.setBlockHat(p, BlockHat.Piston);
+            cancelled = true;
+        }
+
+        if (item.getItemMeta().getDisplayName().contains("TNT")){
+            HatManager hatManager = new HatManager(plugin);
+            hatManager.setBlockHat(p, BlockHat.TNT);
+            cancelled = true;
+        }
+
+        if (item.getItemMeta().getDisplayName().contains("Wool")){
+            HatManager hatManager = new HatManager(plugin);
+            hatManager.setBlockHat(p, BlockHat.Wool);
+            cancelled = true;
+        }
+
+        if (item.getItemMeta().getDisplayName().contains("Red Wool")){
+            HatManager hatManager = new HatManager(plugin);
+            hatManager.setBlockHat(p, BlockHat.Red_Wool);
+            cancelled = true;
+        }
+
+        if (item.getItemMeta().getDisplayName().contains("Blue Wool")){
+            HatManager hatManager = new HatManager(plugin);
+            hatManager.setBlockHat(p, BlockHat.Blue_Wool);
+            cancelled = true;
+        }
+
+        if (item.getItemMeta().getDisplayName().contains("Cyan Wool")){
+            HatManager hatManager = new HatManager(plugin);
+            hatManager.setBlockHat(p, BlockHat.Cyan_Wool);
+            cancelled = true;
+        }
+
+        if (item.getItemMeta().getDisplayName().contains("Purple Wool")){
+            HatManager hatManager = new HatManager(plugin);
+            hatManager.setBlockHat(p, BlockHat.Purple_Wool);
+            cancelled = true;
+        }
+
+        if (item.getItemMeta().getDisplayName().contains("Green Wool")){
+            HatManager hatManager = new HatManager(plugin);
+            hatManager.setBlockHat(p, BlockHat.Green_Wool);
+            cancelled = true;
+        }
+
+        if (item.getItemMeta().getDisplayName().contains("Orange Wool")){
+            HatManager hatManager = new HatManager(plugin);
+            hatManager.setBlockHat(p, BlockHat.Orange_Wool);
+            cancelled = true;
+        }
+
+        if (item.getItemMeta().getDisplayName().contains("Yellow Wool")){
+            HatManager hatManager = new HatManager(plugin);
+            hatManager.setBlockHat(p, BlockHat.Yellow_Wool);
+            cancelled = true;
+        }
+
+        if (item.getItemMeta().getDisplayName().contains("Gray Wool")){
+            HatManager hatManager = new HatManager(plugin);
+            hatManager.setBlockHat(p, BlockHat.Gray_Wool);
+            cancelled = true;
+        }
+
+        if (item.getItemMeta().getDisplayName().contains("DarkRed Wool")){
+            HatManager hatManager = new HatManager(plugin);
+            hatManager.setBlockHat(p, BlockHat.DarkRed_Wool);
+            cancelled = true;
+        }
+
+        if (item.getItemMeta().getDisplayName().contains("DarkBlue Wool")){
+            HatManager hatManager = new HatManager(plugin);
+            hatManager.setBlockHat(p, BlockHat.DarkBlue_Wool);
+            cancelled = true;
+        }
+
+        if (item.getItemMeta().getDisplayName().contains("DarkPurple Wool")){
+            HatManager hatManager = new HatManager(plugin);
+            hatManager.setBlockHat(p, BlockHat.DarkPurple_Wool);
+            cancelled = true;
+        }
+
+        if (item.getItemMeta().getDisplayName().contains("DarkGreen Wool")){
+            HatManager hatManager = new HatManager(plugin);
+            hatManager.setBlockHat(p, BlockHat.DarkGreen_Wool);
+            cancelled = true;
+        }
+
+        if (item.getItemMeta().getDisplayName().contains("DarkGray_Wool")){
+            HatManager hatManager = new HatManager(plugin);
+            hatManager.setBlockHat(p, BlockHat.DarkGray_Wool);
+            cancelled = true;
+        }
+
+        if (item.getItemMeta().getDisplayName().contains("Black Wool")){
+            HatManager hatManager = new HatManager(plugin);
+            hatManager.setBlockHat(p, BlockHat.Black_Wool);
+            cancelled = true;
+        }
+
+        if (item.getItemMeta().getDisplayName().contains("Cactus")){
+            HatManager hatManager = new HatManager(plugin);
+            hatManager.setBlockHat(p, BlockHat.Cactus);
+            cancelled = true;
+        }
+
+        if (item.getItemMeta().getDisplayName().contains("Sand")){
+            HatManager hatManager = new HatManager(plugin);
+            hatManager.setBlockHat(p, BlockHat.Sand);
+            cancelled = true;
+        }
+
+        if (item.getItemMeta().getDisplayName().contains("Crafting Table")){
+            HatManager hatManager = new HatManager(plugin);
+            hatManager.setBlockHat(p, BlockHat.Crafting_Table);
+            cancelled = true;
+        }
+
+        if (item.getItemMeta().getDisplayName().contains("Enchanting Table")){
+            HatManager hatManager = new HatManager(plugin);
+            hatManager.setBlockHat(p, BlockHat.Enchanting_Table);
+            cancelled = true;
+        }
+
+        if (item.getItemMeta().getDisplayName().contains("Chest")){
+            HatManager hatManager = new HatManager(plugin);
+            hatManager.setBlockHat(p, BlockHat.Chest);
+            cancelled = true;
+        }
+
+        if (item.getItemMeta().getDisplayName().contains("Enderchest")){
+            HatManager hatManager = new HatManager(plugin);
+            hatManager.setBlockHat(p, BlockHat.Enderchest);
+            cancelled = true;
+        }
+
+        if (item.getItemMeta().getDisplayName().contains("Next page")){
+            //p.openInventory();
+            cancelled = true;
+        }
     }
 
 
