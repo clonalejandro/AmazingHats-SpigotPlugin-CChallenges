@@ -20,9 +20,6 @@ import org.bukkit.inventory.ItemStack;
 
 public interface BlocksInter {
 
-
-    /** REST **/
-
     ItemStack Grass();
 
     ItemStack Stone();
@@ -108,6 +105,8 @@ public interface BlocksInter {
     ItemStack Chest();
 
     ItemStack Enderchest();
+
+    ItemStack Arrow();
 
 
 }

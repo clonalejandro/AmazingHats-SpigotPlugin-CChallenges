@@ -1,13 +1,9 @@
-
-
-
 # Blocks
 
 Grass: 
  Use: true
- Name: &8Grass
- Description: &eGrass hat
-
+ Name: "&8Grass"
+ Description: "&eGrass hat"
 
 Stone: 
  Use: true

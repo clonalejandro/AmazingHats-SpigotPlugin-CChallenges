@@ -4,6 +4,7 @@ import me.clonalejandro.AmazingHats.Main;
 
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
+import org.bukkit.event.inventory.InventoryType;
 import org.bukkit.inventory.Inventory;
 
 /**
@@ -33,15 +34,15 @@ public class HatGui {
         plugin = instance;
     }
 
-    private String serial = "&b&lA&d&lm&e&la&f&lz&c&li&a&ln&b&lg&6&lHats";
+    private String serial = "&b&lA&d&lm&e&la&9&lz&c&li&a&ln&b&lg &e&lHats";
     private String name = ChatColor.translateAlternateColorCodes('&', serial);
 
 
     /** REST **/
 
-    public  void openGUI(Player p){
+    public void openGUI(Player p){
 
-        Inventory inventory = plugin.getServer().createInventory(null, 54, name);
+        Inventory inventory = plugin.getServer().createInventory(null, 45, name);
         GuiBlocks guiBlocks = new GuiBlocks(plugin);
 
         Items(guiBlocks, inventory);
@@ -93,6 +94,7 @@ public class HatGui {
         inventory.setItem(39, guiBlocks.Enchanting_Table());
         inventory.setItem(40, guiBlocks.Chest());
         inventory.setItem(41, guiBlocks.Enderchest());
+        inventory.setItem(43, guiBlocks.Arrow());
     }
 
 }
