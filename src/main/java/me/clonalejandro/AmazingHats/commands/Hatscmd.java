@@ -41,6 +41,15 @@ public class Hatscmd implements CommandExecutor{
 
     /** REST **/
 
+    /**
+     *
+     * @param sender
+     * @param cmd
+     * @param arg
+     * @param args
+     * @return
+     */
+
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String arg, String[] args){
 
@@ -51,11 +60,6 @@ public class Hatscmd implements CommandExecutor{
                 if (args[0].equalsIgnoreCase("remove")){
                     HatManager hatManager = new HatManager(plugin);
                     hatManager.removeHat(Bukkit.getPlayer(sender.getName()));
-                }
-
-                if (args[0].equalsIgnoreCase("test")){
-                    HatManager HatManager = new HatManager(plugin);
-                    HatManager.setBlockHat(Bukkit.getPlayer(sender.getName()), BlockHat.Glass);
                 }
 
                 if (args[0].equalsIgnoreCase("menu")){
