@@ -4,7 +4,6 @@ import me.clonalejandro.AmazingHats.Main;
 
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
-import org.bukkit.event.inventory.InventoryType;
 import org.bukkit.inventory.Inventory;
 
 /**
@@ -34,7 +33,7 @@ public class HatGui {
         plugin = instance;
     }
 
-    private String serial = "&b&lA&d&lm&e&la&9&lz&c&li&a&ln&b&lg &e&lHats";
+    public String serial = "&b&lA&d&lm&e&la&9&lz&c&li&a&ln&b&lg &e&lHats";
     private String name = ChatColor.translateAlternateColorCodes('&', serial);
 
 
@@ -53,7 +52,7 @@ public class HatGui {
 
     private void Items(GuiBlocks guiBlocks, Inventory inventory){
         inventory.setItem(0, guiBlocks.Grass());
-        inventory.setItem(1, guiBlocks.Glass());
+        inventory.setItem(1, guiBlocks.Stone());
         inventory.setItem(2, guiBlocks.Diamond_Block());
         inventory.setItem(3, guiBlocks.Gold_Block());
         inventory.setItem(4, guiBlocks.Iron_Block());

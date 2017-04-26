@@ -5,6 +5,7 @@ import me.clonalejandro.AmazingHats.gui.GuiBlocks;
 import me.clonalejandro.AmazingHats.gui.HatGui;
 import me.clonalejandro.AmazingHats.hats.All;
 import me.clonalejandro.AmazingHats.hats.blocks.BlockHat;
+import me.clonalejandro.AmazingHats.listeners.HatBlockslistener;
 import me.clonalejandro.AmazingHats.listeners.PlayerListeners;
 import me.clonalejandro.AmazingHats.utils.HatManager;
 
@@ -34,8 +35,7 @@ public class Main extends JavaPlugin {
 
     /** SMALL CONSTRUCTORS **/
 
-    public static Main instance;
-    private boolean debug = false;
+    private static Main instance;
 
     private HatManager HatManager;
     private BlockHat blockHat;
@@ -44,10 +44,10 @@ public class Main extends JavaPlugin {
     private HatGui hatGui;
     private GuiBlocks guiBlocks;
 
-    public String name;
-    public String description;
+    private String name;
+    private String description;
 
-    public boolean Use;
+    private boolean Use;
 
 
     /** REST **/
@@ -71,7 +71,6 @@ public class Main extends JavaPlugin {
 
             Bukkit.getConsoleSender().sendMessage(ChatColor.AQUA + "AmazingHats> " + ChatColor.GREEN + "plugin activated");
         } catch (Exception ex){
-
             ex.printStackTrace();
             Bukkit.getConsoleSender().sendMessage(ChatColor.AQUA + "AmazingHats> " + ChatColor.DARK_RED + "several error");
 
@@ -95,11 +94,7 @@ public class Main extends JavaPlugin {
 
             saveDefaultConfig();
 
-
-
-          //  if (debug) fhatName = "Glass";
-
-            String fhatName = getAll().getHatName();
+            String fhatName = All.getHatName();
 
             Use = getConfig().getBoolean(fhatName + "." + "Use");
             name = getConfig().getString(fhatName + "." + "Name");
@@ -119,7 +114,7 @@ public class Main extends JavaPlugin {
     private void Events(){
         PluginManager pm = instance.getServer().getPluginManager();
         pm.registerEvents(new PlayerListeners(instance), instance);
-        //TODO: Listeners
+        pm.registerEvents(new HatBlockslistener(instance), instance);
     }
 
 

@@ -85,7 +85,7 @@ public class HatManager {
      * @return
      */
 
-    public ItemStack getHat(Player player){
+    private ItemStack getHat(Player player){
 
         ItemStack helmet = player.getInventory().getHelmet();
 

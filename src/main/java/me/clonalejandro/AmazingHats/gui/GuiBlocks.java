@@ -33,7 +33,7 @@ public class GuiBlocks implements BlocksInter{
 
     private final Main plugin;
 
-    GuiBlocks(Main instance){
+    public GuiBlocks(Main instance){
         plugin = instance;
     }
 
