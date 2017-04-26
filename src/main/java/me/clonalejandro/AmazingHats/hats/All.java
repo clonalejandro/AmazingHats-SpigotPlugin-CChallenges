@@ -42,6 +42,7 @@ public class All {
     /** OTHERS **/
 
     private static String[] list = {
+
             "Grass",
             "Stone",
             "Diamond_Block",
