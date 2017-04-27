@@ -98,6 +98,7 @@ public class HatManager {
                     break;
             }
         }
+
         player.getInventory().setHelmet(stack);
 
         isHat.put(player, true);
