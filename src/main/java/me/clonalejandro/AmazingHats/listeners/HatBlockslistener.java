@@ -68,7 +68,7 @@ public class HatBlockslistener implements Listener{
 
         if (e.getClickedInventory().getName().equalsIgnoreCase(name)){
             ItemStack item = getItem(e);
-            ifs(item, p);
+            ifs(item, p);//E is required for instance the void "ifs"
 
             if (cancelled) e.setCancelled(true);
             else e.setCancelled(false);
@@ -83,7 +83,6 @@ public class HatBlockslistener implements Listener{
      */
 
     private void ifs(ItemStack item, Player p){
-        GuiBlocks guiBlocks = new GuiBlocks(plugin);
 
         if (item.getItemMeta().getDisplayName().contains("Grass")){
             HatManager hatManager = new HatManager(plugin);
@@ -121,12 +120,6 @@ public class HatBlockslistener implements Listener{
             cancelled = true;
         }
 
-        if (item.getItemMeta().getDisplayName().contains("Redstone Block")){
-            HatManager hatManager = new HatManager(plugin);
-            hatManager.setBlockHat(p, BlockHat.Redstone_Block);
-            cancelled = true;
-        }
-
         if (item.getItemMeta().getDisplayName().contains("Beacon")){
             HatManager hatManager = new HatManager(plugin);
             hatManager.setBlockHat(p, BlockHat.Beacon);
@@ -154,6 +147,13 @@ public class HatBlockslistener implements Listener{
         if (item.getItemMeta().getDisplayName().contains("Emerald Ore")){
             HatManager hatManager = new HatManager(plugin);
             hatManager.setBlockHat(p, BlockHat.Emerald_Ore);
+            cancelled = true;
+        }
+
+
+        if (item.getItemMeta().getDisplayName().contains("Redstone Block")){
+            HatManager hatManager = new HatManager(plugin);
+            hatManager.setBlockHat(p, BlockHat.Redstone_Block);
             cancelled = true;
         }
 

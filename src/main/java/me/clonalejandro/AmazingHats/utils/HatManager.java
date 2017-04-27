@@ -65,17 +65,46 @@ public class HatManager {
         String description = plugin.getConfig().getString(hat.toString() + "." + "Description");
 
         meta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
-
         lore.add(ChatColor.translateAlternateColorCodes('&', "&b&lA&d&lm&e&la&f&lz&c&li&a&ln&b&lg&6&lHat> " + description));
-
         meta.setLore(lore);
 
         stack.setItemMeta(meta);
 
-        if (helmet != null) player.getInventory().addItem(helmet);
+        if (hHat) {
+            switch (helmet.getType()) {
+
+                default:
+                    removeHat(player);
+                    break;
+
+                case DIAMOND_HELMET:
+                    player.getInventory().addItem(helmet);
+                    break;
+
+                case LEATHER_HELMET:
+                    player.getInventory().addItem(helmet);
+                    break;
+
+                case IRON_HELMET:
+                    player.getInventory().addItem(helmet);
+                    break;
+
+                case GOLD_HELMET:
+                    player.getInventory().addItem(helmet);
+                    break;
+
+                case CHAINMAIL_HELMET:
+                    player.getInventory().addItem(helmet);
+                    break;
+            }
+        }
         player.getInventory().setHelmet(stack);
 
         isHat.put(player, true);
+
+        player.closeInventory();
+
+        player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&a&lAmazingHats> &fYour hat &e" + hat.toString() + "&f " + "has been set in you"));
     }
 
 
@@ -105,7 +134,7 @@ public class HatManager {
      */
 
     public void removeHat(Player player){
-
+        getHat(player);
         if (hHat){
             player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&a&lAmazingHats> &fYour hat has been removed"));
             player.getInventory().setHelmet(new ItemStack(Material.AIR));

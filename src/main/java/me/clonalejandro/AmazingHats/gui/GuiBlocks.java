@@ -33,17 +33,12 @@ public class GuiBlocks implements BlocksInter{
 
     private final Main plugin;
 
-    public GuiBlocks(Main instance){
+    GuiBlocks(Main instance){
         plugin = instance;
     }
 
 
     /** REST **/
-
-    /**
-     *
-     * @return
-     */
 
     @Override
     public ItemStack Grass() {
@@ -69,11 +64,6 @@ public class GuiBlocks implements BlocksInter{
     }
 
 
-    /**
-     *
-     * @return
-     */
-
     @Override
     public ItemStack Stone() {
 
@@ -97,11 +87,6 @@ public class GuiBlocks implements BlocksInter{
         return stone;
     }
 
-
-    /**
-     *
-     * @return
-     */
 
     @Override
     public ItemStack Diamond_Block() {
@@ -127,11 +112,6 @@ public class GuiBlocks implements BlocksInter{
     }
 
 
-    /**
-     *
-     * @return
-     */
-
     @Override
     public ItemStack Gold_Block() {
 
@@ -154,11 +134,6 @@ public class GuiBlocks implements BlocksInter{
         return goldblock;
     }
 
-
-    /**
-     *
-     * @return
-     */
 
     @Override
     public ItemStack Iron_Block() {
@@ -183,11 +158,6 @@ public class GuiBlocks implements BlocksInter{
     }
 
 
-    /**
-     *
-     * @return
-     */
-
     @Override
     public ItemStack Emerald_Block() {
 
@@ -210,11 +180,6 @@ public class GuiBlocks implements BlocksInter{
         return emeraldblock;
     }
 
-
-    /**
-     *
-     * @return
-     */
 
     @Override
     public ItemStack Beacon() {
@@ -239,11 +204,6 @@ public class GuiBlocks implements BlocksInter{
     }
 
 
-    /**
-     *
-     * @return
-     */
-
     @Override
     public ItemStack Diamond_Ore() {
 
@@ -266,11 +226,6 @@ public class GuiBlocks implements BlocksInter{
         return diamondore;
     }
 
-
-    /**
-     *
-     * @return
-     */
 
     @Override
     public ItemStack Gold_Ore() {
@@ -295,11 +250,6 @@ public class GuiBlocks implements BlocksInter{
     }
 
 
-    /**
-     *
-     * @return
-     */
-
     @Override
     public ItemStack Iron_Ore() {
 
@@ -322,11 +272,6 @@ public class GuiBlocks implements BlocksInter{
         return ironore;
     }
 
-
-    /**
-     *
-     * @return
-     */
 
     @Override
     public ItemStack Emerald_Ore() {
@@ -351,11 +296,6 @@ public class GuiBlocks implements BlocksInter{
     }
 
 
-    /**
-     *
-     * @return
-     */
-
     @Override
     public ItemStack Redstone_Block() {
 
@@ -378,11 +318,6 @@ public class GuiBlocks implements BlocksInter{
         return redstoneblock;
     }
 
-
-    /**
-     *
-     * @return
-     */
 
     @Override
     public ItemStack Lapis_Block() {
@@ -407,11 +342,6 @@ public class GuiBlocks implements BlocksInter{
     }
 
 
-    /**
-     *
-     * @return
-     */
-
     @Override
     public ItemStack Lapis_Ore() {
 
@@ -434,11 +364,6 @@ public class GuiBlocks implements BlocksInter{
         return lapisore;
     }
 
-
-    /**
-     *
-     * @return
-     */
 
     @Override
     public ItemStack Redstone_Ore() {
@@ -463,11 +388,6 @@ public class GuiBlocks implements BlocksInter{
     }
 
 
-    /**
-     *
-     * @return
-     */
-
     @Override
     public ItemStack Command_Block() {
 
@@ -490,11 +410,6 @@ public class GuiBlocks implements BlocksInter{
         return commandblock;
     }
 
-
-    /**
-     *
-     * @return
-     */
 
     @Override
     public ItemStack Glass() {
@@ -519,11 +434,6 @@ public class GuiBlocks implements BlocksInter{
     }
 
 
-    /**
-     *
-     * @return
-     */
-
     @Override
     public ItemStack Spawner() {
 
@@ -546,11 +456,6 @@ public class GuiBlocks implements BlocksInter{
         return spawner;
     }
 
-
-    /**
-     *
-     * @return
-     */
 
     @Override
     public ItemStack Anvil() {
@@ -575,11 +480,6 @@ public class GuiBlocks implements BlocksInter{
     }
 
 
-    /**
-     *
-     * @return
-     */
-
     @Override
     public ItemStack Obsidian() {
 
@@ -602,11 +502,6 @@ public class GuiBlocks implements BlocksInter{
         return obsidian;
     }
 
-
-    /**
-     *
-     * @return
-     */
 
     @Override
     public ItemStack Piston() {
@@ -631,11 +526,6 @@ public class GuiBlocks implements BlocksInter{
     }
 
 
-    /**
-     *
-     * @return
-     */
-
     @Override
     public ItemStack TNT() {
 
@@ -658,11 +548,6 @@ public class GuiBlocks implements BlocksInter{
         return tnt;
     }
 
-
-    /**
-     *
-     * @return
-     */
 
     @Override
     public ItemStack Wool() {
@@ -687,11 +572,6 @@ public class GuiBlocks implements BlocksInter{
     }
 
 
-    /**
-     *
-     * @return
-     */
-
     @Override
     public ItemStack Red_Wool() {
 
@@ -714,11 +594,6 @@ public class GuiBlocks implements BlocksInter{
         return redwool;
     }
 
-
-    /**
-     *
-     * @return
-     */
 
     @Override
     public ItemStack Blue_Wool() {
@@ -743,11 +618,6 @@ public class GuiBlocks implements BlocksInter{
     }
 
 
-    /**
-     *
-     * @return
-     */
-
     @Override
     public ItemStack Cyan_Wool() {
 
@@ -770,11 +640,6 @@ public class GuiBlocks implements BlocksInter{
         return cyanwool;
     }
 
-
-    /**
-     *
-     * @return
-     */
 
     @Override
     public ItemStack Purple_Wool() {
@@ -799,11 +664,6 @@ public class GuiBlocks implements BlocksInter{
     }
 
 
-    /**
-     *
-     * @return
-     */
-
     @Override
     public ItemStack Green_Wool() {
 
@@ -826,11 +686,6 @@ public class GuiBlocks implements BlocksInter{
         return greenwool;
     }
 
-
-    /**
-     *
-     * @return
-     */
 
     @Override
     public ItemStack Orange_Wool() {
@@ -855,11 +710,6 @@ public class GuiBlocks implements BlocksInter{
     }
 
 
-    /**
-     *
-     * @return
-     */
-
     @Override
     public ItemStack Yellow_Wool() {
 
@@ -882,11 +732,6 @@ public class GuiBlocks implements BlocksInter{
         return yellowwool;
     }
 
-
-    /**
-     *
-     * @return
-     */
 
     @Override
     public ItemStack Gray_Wool() {
@@ -911,11 +756,6 @@ public class GuiBlocks implements BlocksInter{
     }
 
 
-    /**
-     *
-     * @return
-     */
-
     @Override
     public ItemStack DarkRed_Wool() {
 
@@ -938,11 +778,6 @@ public class GuiBlocks implements BlocksInter{
         return darkredwool;
     }
 
-
-    /**
-     *
-     * @return
-     */
 
     @Override
     public ItemStack DarkBlue_Wool() {
@@ -967,11 +802,6 @@ public class GuiBlocks implements BlocksInter{
     }
 
 
-    /**
-     *
-     * @return
-     */
-
     @Override
     public ItemStack DarkPurple_Wool() {
 
@@ -994,11 +824,6 @@ public class GuiBlocks implements BlocksInter{
         return darkpurplewool;
     }
 
-
-    /**
-     *
-     * @return
-     */
 
     @Override
     public ItemStack DarkGreen_Wool() {
@@ -1023,11 +848,6 @@ public class GuiBlocks implements BlocksInter{
     }
 
 
-    /**
-     *
-     * @return
-     */
-
     @Override
     public ItemStack DarkGray_Wool() {
 
@@ -1050,11 +870,6 @@ public class GuiBlocks implements BlocksInter{
         return darkgraywool;
     }
 
-
-    /**
-     *
-     * @return
-     */
 
     @Override
     public ItemStack Black_Wool() {
@@ -1079,11 +894,6 @@ public class GuiBlocks implements BlocksInter{
     }
 
 
-    /**
-     *
-     * @return
-     */
-
     @Override
     public ItemStack Cactus() {
 
@@ -1106,11 +916,6 @@ public class GuiBlocks implements BlocksInter{
         return cactus;
     }
 
-
-    /**
-     *
-     * @return
-     */
 
     @Override
     public ItemStack Sand() {
@@ -1135,11 +940,6 @@ public class GuiBlocks implements BlocksInter{
     }
 
 
-    /**
-     *
-     * @return
-     */
-
     @Override
     public ItemStack Crafting_Table() {
 
@@ -1162,11 +962,6 @@ public class GuiBlocks implements BlocksInter{
         return craftingtable;
     }
 
-
-    /**
-     *
-     * @return
-     */
 
     @Override
     public ItemStack Enchanting_Table() {
@@ -1191,11 +986,6 @@ public class GuiBlocks implements BlocksInter{
     }
 
 
-    /**
-     *
-     * @return
-     */
-
     @Override
     public ItemStack Chest() {
 
@@ -1219,11 +1009,6 @@ public class GuiBlocks implements BlocksInter{
     }
 
 
-    /**
-     *
-     * @return
-     */
-
     @Override
     public ItemStack Enderchest() {
 
@@ -1246,11 +1031,6 @@ public class GuiBlocks implements BlocksInter{
         return enderchest;
     }
 
-
-    /**
-     *
-     * @return
-     */
 
     @Override
     public ItemStack Arrow(){

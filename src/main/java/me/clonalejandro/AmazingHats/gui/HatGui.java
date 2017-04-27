@@ -68,12 +68,12 @@ public class HatGui {
         inventory.setItem(3, guiBlocks.Gold_Block());
         inventory.setItem(4, guiBlocks.Iron_Block());
         inventory.setItem(5, guiBlocks.Emerald_Block());
-        inventory.setItem(6, guiBlocks.Redstone_Block());
-        inventory.setItem(7, guiBlocks.Beacon());
-        inventory.setItem(8, guiBlocks.Diamond_Ore());
-        inventory.setItem(9, guiBlocks.Gold_Ore());
-        inventory.setItem(10, guiBlocks.Iron_Ore());
-        inventory.setItem(11, guiBlocks.Emerald_Ore());
+        inventory.setItem(6, guiBlocks.Beacon());
+        inventory.setItem(7, guiBlocks.Diamond_Ore());
+        inventory.setItem(8, guiBlocks.Gold_Ore());
+        inventory.setItem(9, guiBlocks.Iron_Ore());
+        inventory.setItem(10, guiBlocks.Emerald_Ore());
+        inventory.setItem(11, guiBlocks.Redstone_Block());
         inventory.setItem(12, guiBlocks.Redstone_Ore());
         inventory.setItem(13, guiBlocks.Lapis_Block());
         inventory.setItem(14, guiBlocks.Lapis_Ore());
