@@ -3,6 +3,7 @@ package me.clonalejandro.AmazingHats.utils;
 import me.clonalejandro.AmazingHats.Main;
 import me.clonalejandro.AmazingHats.hats.blocks.BlockHat;
 
+import me.clonalejandro.AmazingHats.hats.heads.HeadHat;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -48,7 +49,6 @@ public class HatManager {
     /** REST **/
 
     /**
-     *
      * @param player
      * @param hat
      */
@@ -61,8 +61,8 @@ public class HatManager {
         ItemMeta meta = stack.getItemMeta();
         List<String> lore = new ArrayList<>();
 
-        String name = plugin.getConfig().getString(hat.toString() + "." + "Name");
-        String description = plugin.getConfig().getString(hat.toString() + "." + "Description");
+        String name = plugin.getConfig().getString(hat.toString() + ".Name");
+        String description = plugin.getConfig().getString(hat.toString() + ".Description");
 
         meta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         lore.add(ChatColor.translateAlternateColorCodes('&', "&b&lA&d&lm&e&la&f&lz&c&li&a&ln&b&lg&6&lHat> " + description));
@@ -70,34 +70,7 @@ public class HatManager {
 
         stack.setItemMeta(meta);
 
-        if (hHat) {
-            switch (helmet.getType()) {
-
-                default:
-                    removeHat(player);
-                    break;
-
-                case DIAMOND_HELMET:
-                    player.getInventory().addItem(helmet);
-                    break;
-
-                case LEATHER_HELMET:
-                    player.getInventory().addItem(helmet);
-                    break;
-
-                case IRON_HELMET:
-                    player.getInventory().addItem(helmet);
-                    break;
-
-                case GOLD_HELMET:
-                    player.getInventory().addItem(helmet);
-                    break;
-
-                case CHAINMAIL_HELMET:
-                    player.getInventory().addItem(helmet);
-                    break;
-            }
-        }
+        if (hHat) cleanner(helmet, player);
 
         player.getInventory().setHelmet(stack);
 
@@ -110,27 +83,56 @@ public class HatManager {
 
 
     /**
-     *
      * @param player
-     * @return
+     * @param hat
      */
 
-    private ItemStack getHat(Player player){
+    public void setSkullHat(Player player, HeadHat hat){
 
         ItemStack helmet = player.getInventory().getHelmet();
+        ItemStack skull = hat.getHat();
 
-        if (helmet != null)
-            if (isHat.containsKey(player)) hHat = true;
-            else hHat = false;
-        else hHat = false;
+        ItemMeta meta = skull.getItemMeta();
+        List<String> lore = new ArrayList<>();
 
-        if (hHat) return helmet;
-        else return null;
+        String name = plugin.getConfig().getString(hat.toString() + ".Name");
+        String description = plugin.getConfig().getString(hat.toString() + ".Description");
+
+        meta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
+        lore.add(ChatColor.translateAlternateColorCodes('&', "&b&lA&d&lm&e&la&f&lz&c&li&a&ln&b&lg&6&lHat> " + description));
+        meta.setLore(lore);
+
+        skull.setItemMeta(meta);
+
+        if (hHat) cleanner(helmet, player);
+
+        player.getInventory().setHelmet(skull);
+
+        isHat.put(player, true);
+
+        player.closeInventory();
+        player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&a&lAmazingHats> &fYour hat &e" + hat.toString() + "&fhas been set in you"));
     }
 
 
     /**
-     *
+     * @param player
+     * @return
+     */
+
+    private ItemStack getHat(Player player) {
+
+        ItemStack helmet = player.getInventory().getHelmet();
+
+        hHat = helmet != null && isHat.containsKey(player);
+
+        if (hHat) return helmet;
+        else return null;
+
+    }
+
+
+    /**
      * @param player
      */
 
@@ -142,6 +144,41 @@ public class HatManager {
             isHat.remove(player);
         }
         else player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&c&lAmazingHats> &fYou don't have any hat"));
+    }
+
+
+    /**
+     * @param helmet
+     * @param player
+     */
+
+    private void cleanner(ItemStack helmet, Player player){
+        switch (helmet.getType()) {
+
+            default:
+                removeHat(player);
+                break;
+
+            case DIAMOND_HELMET:
+                player.getInventory().addItem(helmet);
+                break;
+
+            case LEATHER_HELMET:
+                player.getInventory().addItem(helmet);
+                break;
+
+            case IRON_HELMET:
+                player.getInventory().addItem(helmet);
+                break;
+
+            case GOLD_HELMET:
+                player.getInventory().addItem(helmet);
+                break;
+
+            case CHAINMAIL_HELMET:
+                player.getInventory().addItem(helmet);
+                break;
+        }
     }
 
 
