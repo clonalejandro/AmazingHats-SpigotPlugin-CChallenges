@@ -42,7 +42,6 @@ public class Hatscmd implements CommandExecutor{
     /** REST **/
 
     /**
-     *
      * @param sender
      * @param cmd
      * @param arg

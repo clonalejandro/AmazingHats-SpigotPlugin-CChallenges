@@ -40,7 +40,6 @@ public class HatGui {
     /** REST **/
 
     /**
-     *
      * @param p
      */
 
@@ -56,7 +55,6 @@ public class HatGui {
 
 
     /**
-     *
      * @param guiBlocks
      * @param inventory
      */

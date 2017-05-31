@@ -46,7 +46,6 @@ public class HatBlockslistener implements Listener{
     /** REST **/
 
     /**
-     *
      * @param e
      * @return
      */
@@ -77,7 +76,6 @@ public class HatBlockslistener implements Listener{
 
 
     /**
-     *
      * @param item
      * @param p
      */
