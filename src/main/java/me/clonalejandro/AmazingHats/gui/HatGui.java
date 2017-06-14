@@ -42,7 +42,6 @@ public class HatGui {
     /**
      * @param p
      */
-
     public void openGUI(Player p){
 
         Inventory inventory = plugin.getServer().createInventory(null, 45, name);
@@ -58,7 +57,6 @@ public class HatGui {
      * @param guiBlocks
      * @param inventory
      */
-
     private void ItemBs(GuiBlocks guiBlocks, Inventory inventory){
         inventory.setItem(0, guiBlocks.Grass());
         inventory.setItem(1, guiBlocks.Stone());
