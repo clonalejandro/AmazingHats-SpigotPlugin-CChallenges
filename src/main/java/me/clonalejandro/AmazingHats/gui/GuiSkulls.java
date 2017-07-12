@@ -334,13 +334,31 @@ public class GuiSkulls implements SkullInter {
     @Override
     public ItemStack Snowman() {
 
+        ItemStack skull = new ItemStack(Material.SKULL);
 
-        return null;
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+
+        String name = plugin.getConfig().getString(getName(12) + cName);
+        String description = plugin.getConfig().getString(getName(13) + cDescription);
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(12));
+
+        skull.setItemMeta(skullMeta);
+
+        return skull;
     }
+
 
     @Override
     public ItemStack EnderDragon() {
         return null;
+
     }
 
     @Override
