@@ -5,6 +5,8 @@ import me.clonalejandro.AmazingHats.hats.All;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
+import org.bukkit.block.Skull;
+import org.bukkit.entity.Item;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.SkullMeta;
 
@@ -339,7 +341,7 @@ public class GuiSkulls implements SkullInter {
         SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
 
         String name = plugin.getConfig().getString(getName(12) + cName);
-        String description = plugin.getConfig().getString(getName(13) + cDescription);
+        String description = plugin.getConfig().getString(getName(12) + cDescription);
 
         List<String> lore = new ArrayList<>();
 
@@ -357,54 +359,243 @@ public class GuiSkulls implements SkullInter {
 
     @Override
     public ItemStack EnderDragon() {
-        return null;
 
+        ItemStack skull = new ItemStack(Material.SKULL);
+
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+
+        String name = plugin.getConfig().getString(getName(13) + cName);
+        String description = plugin.getConfig().getString(getName(13) + cDescription);
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(13));
+
+        skull.setItemMeta(skullMeta);
+
+        return skull;
     }
+
 
     @Override
     public ItemStack Witch() {
-        return null;
+
+        ItemStack skull = new ItemStack(Material.SKULL);
+
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+
+        String name = plugin.getConfig().getString(getName(14) + cName);
+        String description = plugin.getConfig().getString(getName(14) + cDescription);
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(14));
+
+        skull.setItemMeta(skullMeta);
+
+        return skull;
     }
+
 
     @Override
     public ItemStack CaveSpider() {
-        return null;
+
+        ItemStack skull = new ItemStack(Material.SKULL);
+
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+
+        String name = plugin.getConfig().getString(getName(15) + cName);
+        String description = plugin.getConfig().getString(getName(15) + cDescription);
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(15));
+
+        skull.setItemMeta(skullMeta);
+
+        return skull;
     }
+
 
     @Override
     public ItemStack Creeper() {
-        return null;
+
+        ItemStack skull = new ItemStack(Material.SKULL);
+
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+
+        String name = plugin.getConfig().getString(getName(16) + cName);
+        String description = plugin.getConfig().getString(getName(16) + cDescription);
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(16));
+
+        skull.setItemMeta(skullMeta);
+
+        return skull;
     }
+
 
     @Override
     public ItemStack Skeleton() {
-        return null;
+
+        ItemStack skull = new ItemStack(Material.SKULL);
+
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+
+        String name = plugin.getConfig().getString(getName(17) + cName);
+        String description = plugin.getConfig().getString(getName(17) + cDescription);
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(17));
+
+        skull.setItemMeta(skullMeta);
+
+        return skull;
     }
+
 
     @Override
     public ItemStack Whiter() {
-        return null;
+
+        ItemStack skull = new ItemStack(Material.SKULL);
+
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+
+        String name = plugin.getConfig().getString(getName(18) + cName);
+        String description = plugin.getConfig().getString(getName(18) + cDescription);
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(18));
+
+        skull.setItemMeta(skullMeta);
+
+        return skull;
     }
+
 
     @Override
     public ItemStack WhiterSkeleton() {
-        return null;
+
+        ItemStack skull = new ItemStack(Material.SKULL);
+
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+
+        String name = plugin.getConfig().getString(getName(19) + cName);
+        String description = plugin.getConfig().getString(getName(19) + cDescription);
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(19));
+
+        skull.setItemMeta(skullMeta);
+
+        return skull;
     }
+
 
     @Override
     public ItemStack Pigman() {
-        return null;
+
+        ItemStack skull = new ItemStack(Material.SKULL);
+
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+
+        String name = plugin.getConfig().getString(getName(20) + cName);
+        String description = plugin.getConfig().getString(getName(20) + cDescription);
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(20));
+
+        skull.setItemMeta(skullMeta);
+
+        return skull;
     }
+
 
     @Override
     public ItemStack Slime() {
-        return null;
+
+        ItemStack skull = new ItemStack(Material.SKULL);
+
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+
+        String name = plugin.getConfig().getString(getName(21) + cName);
+        String description = plugin.getConfig().getString(getName(21) + cDescription);
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(21));
+
+        skull.setItemMeta(skullMeta);
+
+        return skull;
     }
+
 
     @Override
     public ItemStack Magmacube() {
-        return null;
+
+        ItemStack skull = new ItemStack(Material.SKULL);
+
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+
+        String name = plugin.getConfig().getString(getName(22) + cName);
+        String description = plugin.getConfig().getString(getName(22) + cDescription);
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(22));
+
+        skull.setItemMeta(skullMeta);
+
+        return skull;
     }
+
 
     @Override
     public ItemStack Blaze() {
