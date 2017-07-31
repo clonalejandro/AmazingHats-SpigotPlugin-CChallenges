@@ -599,18 +599,55 @@ public class GuiSkulls implements SkullInter {
 
     @Override
     public ItemStack Blaze() {
-        return null;
+
+        ItemStack skull = new ItemStack(Material.SKULL);
+
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+
+        String name = plugin.getConfig().getString(getName(23) + cName);
+        String description = plugin.getConfig().getString(getName(23) + cDescription);
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(23));
+
+        skull.setItemMeta(skullMeta);
+
+        return skull;
     }
+
 
     @Override
     public ItemStack Jellyfish() {
-        return null;
+
+        ItemStack skull = new ItemStack(Material.SKULL);
+
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+
+        String name = plugin.getConfig().getString(getName(24) + cName);
+        String description = plugin.getConfig().getString(getName(24) + cDescription);
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(24));
+
+        return skull;
     }
+
 
     @Override
     public ItemStack Enderman() {
         return null;
     }
+
 
     @Override
     public ItemStack Squid() {
