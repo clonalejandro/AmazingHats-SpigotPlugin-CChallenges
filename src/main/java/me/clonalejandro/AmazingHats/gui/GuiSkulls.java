@@ -5,8 +5,6 @@ import me.clonalejandro.AmazingHats.hats.All;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
-import org.bukkit.block.Skull;
-import org.bukkit.entity.Item;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.SkullMeta;
 
@@ -53,8 +51,8 @@ public class GuiSkulls implements SkullInter {
 
         SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
 
-        String name = plugin.getConfig().getString(getName(0) + cName);
-        String description = plugin.getConfig().getString(getName(0) + cDescription);
+        final String name = plugin.getConfig().getString(getName(0) + cName);
+        final String description = plugin.getConfig().getString(getName(0) + cDescription);
 
         List<String> lore = new ArrayList<>();
 
@@ -77,8 +75,8 @@ public class GuiSkulls implements SkullInter {
 
         SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
 
-        String name = plugin.getConfig().getString(getName(1) + cName);
-        String description = plugin.getConfig().getString(getName(1) + cDescription);
+        final String name = plugin.getConfig().getString(getName(1) + cName);
+        final String description = plugin.getConfig().getString(getName(1) + cDescription);
 
         List<String> lore = new ArrayList<>();
 
@@ -101,8 +99,8 @@ public class GuiSkulls implements SkullInter {
 
         SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
 
-        String name = plugin.getConfig().getString(getName(2) + cName);
-        String description = plugin.getConfig().getString(getName(2) + cDescription);
+        final String name = plugin.getConfig().getString(getName(2) + cName);
+        final String description = plugin.getConfig().getString(getName(2) + cDescription);
 
         List<String> lore = new ArrayList<>();
 
@@ -125,8 +123,8 @@ public class GuiSkulls implements SkullInter {
 
         SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
 
-        String name = plugin.getConfig().getString(getName(3) + cName);
-        String description = plugin.getConfig().getString(getName(3) + cDescription);
+        final String name = plugin.getConfig().getString(getName(3) + cName);
+        final String description = plugin.getConfig().getString(getName(3) + cDescription);
 
         List<String> lore = new ArrayList<>();
 
@@ -149,8 +147,8 @@ public class GuiSkulls implements SkullInter {
 
         SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
 
-        String name = plugin.getConfig().getString(getName(4) + cName);
-        String description = plugin.getConfig().getString(getName(4) + cDescription);
+        final String name = plugin.getConfig().getString(getName(4) + cName);
+        final String description = plugin.getConfig().getString(getName(4) + cDescription);
 
         List<String> lore = new ArrayList<>();
 
@@ -173,8 +171,8 @@ public class GuiSkulls implements SkullInter {
 
         SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
 
-        String name = plugin.getConfig().getString(getName(5) + cName);
-        String description = plugin.getConfig().getString(getName(5) + cDescription);
+        final String name = plugin.getConfig().getString(getName(5) + cName);
+        final String description = plugin.getConfig().getString(getName(5) + cDescription);
 
         List<String> lore = new ArrayList<>();
 
@@ -197,8 +195,8 @@ public class GuiSkulls implements SkullInter {
 
         SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
 
-        String name = plugin.getConfig().getString(getName(6) + cName);
-        String description = plugin.getConfig().getString(getName(6) + cDescription);
+        final String name = plugin.getConfig().getString(getName(6) + cName);
+        final String description = plugin.getConfig().getString(getName(6) + cDescription);
 
         List<String> lore = new ArrayList<>();
 
@@ -221,8 +219,8 @@ public class GuiSkulls implements SkullInter {
 
         SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
 
-        String name = plugin.getConfig().getString(getName(7) + cName);
-        String description = plugin.getConfig().getString(getName(7) + cDescription);
+        final String name = plugin.getConfig().getString(getName(7) + cName);
+        final String description = plugin.getConfig().getString(getName(7) + cDescription);
 
         List<String> lore = new ArrayList<>();
 
@@ -245,8 +243,8 @@ public class GuiSkulls implements SkullInter {
 
         SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
 
-        String name = plugin.getConfig().getString(getName(8) + cName);
-        String description = plugin.getConfig().getString(getName(8) + cDescription);
+        final String name = plugin.getConfig().getString(getName(8) + cName);
+        final String description = plugin.getConfig().getString(getName(8) + cDescription);
 
         List<String> lore = new ArrayList<>();
 
@@ -269,8 +267,8 @@ public class GuiSkulls implements SkullInter {
 
         SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
 
-        String name = plugin.getConfig().getString(getName(9) + cName);
-        String description = plugin.getConfig().getString(getName(9) + cDescription);
+        final String name = plugin.getConfig().getString(getName(9) + cName);
+        final String description = plugin.getConfig().getString(getName(9) + cDescription);
 
         List<String> lore = new ArrayList<>();
 
@@ -293,8 +291,8 @@ public class GuiSkulls implements SkullInter {
 
         SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
 
-        String name = plugin.getConfig().getString(getName(10) + cName);
-        String description = plugin.getConfig().getString(getName(10) + cDescription);
+        final String name = plugin.getConfig().getString(getName(10) + cName);
+        final String description = plugin.getConfig().getString(getName(10) + cDescription);
 
         List<String> lore = new ArrayList<>();
 
@@ -316,8 +314,8 @@ public class GuiSkulls implements SkullInter {
 
         SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
 
-        String name = plugin.getConfig().getString(getName(11) + cName);
-        String description = plugin.getConfig().getString(getName(11) + cDescription);
+        final String name = plugin.getConfig().getString(getName(11) + cName);
+        final String description = plugin.getConfig().getString(getName(11) + cDescription);
 
         List<String> lore = new ArrayList<>();
 
@@ -340,8 +338,8 @@ public class GuiSkulls implements SkullInter {
 
         SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
 
-        String name = plugin.getConfig().getString(getName(12) + cName);
-        String description = plugin.getConfig().getString(getName(12) + cDescription);
+        final String name = plugin.getConfig().getString(getName(12) + cName);
+        final String description = plugin.getConfig().getString(getName(12) + cDescription);
 
         List<String> lore = new ArrayList<>();
 
@@ -364,8 +362,8 @@ public class GuiSkulls implements SkullInter {
 
         SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
 
-        String name = plugin.getConfig().getString(getName(13) + cName);
-        String description = plugin.getConfig().getString(getName(13) + cDescription);
+        final String name = plugin.getConfig().getString(getName(13) + cName);
+        final String description = plugin.getConfig().getString(getName(13) + cDescription);
 
         List<String> lore = new ArrayList<>();
 
@@ -388,8 +386,8 @@ public class GuiSkulls implements SkullInter {
 
         SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
 
-        String name = plugin.getConfig().getString(getName(14) + cName);
-        String description = plugin.getConfig().getString(getName(14) + cDescription);
+        final String name = plugin.getConfig().getString(getName(14) + cName);
+        final String description = plugin.getConfig().getString(getName(14) + cDescription);
 
         List<String> lore = new ArrayList<>();
 
@@ -412,8 +410,8 @@ public class GuiSkulls implements SkullInter {
 
         SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
 
-        String name = plugin.getConfig().getString(getName(15) + cName);
-        String description = plugin.getConfig().getString(getName(15) + cDescription);
+        final String name = plugin.getConfig().getString(getName(15) + cName);
+        final String description = plugin.getConfig().getString(getName(15) + cDescription);
 
         List<String> lore = new ArrayList<>();
 
@@ -436,8 +434,8 @@ public class GuiSkulls implements SkullInter {
 
         SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
 
-        String name = plugin.getConfig().getString(getName(16) + cName);
-        String description = plugin.getConfig().getString(getName(16) + cDescription);
+        final String name = plugin.getConfig().getString(getName(16) + cName);
+        final String description = plugin.getConfig().getString(getName(16) + cDescription);
 
         List<String> lore = new ArrayList<>();
 
@@ -460,8 +458,8 @@ public class GuiSkulls implements SkullInter {
 
         SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
 
-        String name = plugin.getConfig().getString(getName(17) + cName);
-        String description = plugin.getConfig().getString(getName(17) + cDescription);
+        final String name = plugin.getConfig().getString(getName(17) + cName);
+        final String description = plugin.getConfig().getString(getName(17) + cDescription);
 
         List<String> lore = new ArrayList<>();
 
@@ -484,8 +482,8 @@ public class GuiSkulls implements SkullInter {
 
         SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
 
-        String name = plugin.getConfig().getString(getName(18) + cName);
-        String description = plugin.getConfig().getString(getName(18) + cDescription);
+        final String name = plugin.getConfig().getString(getName(18) + cName);
+        final String description = plugin.getConfig().getString(getName(18) + cDescription);
 
         List<String> lore = new ArrayList<>();
 
@@ -508,8 +506,8 @@ public class GuiSkulls implements SkullInter {
 
         SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
 
-        String name = plugin.getConfig().getString(getName(19) + cName);
-        String description = plugin.getConfig().getString(getName(19) + cDescription);
+        final String name = plugin.getConfig().getString(getName(19) + cName);
+        final String description = plugin.getConfig().getString(getName(19) + cDescription);
 
         List<String> lore = new ArrayList<>();
 
@@ -532,8 +530,8 @@ public class GuiSkulls implements SkullInter {
 
         SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
 
-        String name = plugin.getConfig().getString(getName(20) + cName);
-        String description = plugin.getConfig().getString(getName(20) + cDescription);
+        final String name = plugin.getConfig().getString(getName(20) + cName);
+        final String description = plugin.getConfig().getString(getName(20) + cDescription);
 
         List<String> lore = new ArrayList<>();
 
@@ -556,8 +554,8 @@ public class GuiSkulls implements SkullInter {
 
         SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
 
-        String name = plugin.getConfig().getString(getName(21) + cName);
-        String description = plugin.getConfig().getString(getName(21) + cDescription);
+        final String name = plugin.getConfig().getString(getName(21) + cName);
+        final String description = plugin.getConfig().getString(getName(21) + cDescription);
 
         List<String> lore = new ArrayList<>();
 
@@ -580,8 +578,8 @@ public class GuiSkulls implements SkullInter {
 
         SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
 
-        String name = plugin.getConfig().getString(getName(22) + cName);
-        String description = plugin.getConfig().getString(getName(22) + cDescription);
+        final String name = plugin.getConfig().getString(getName(22) + cName);
+        final String description = plugin.getConfig().getString(getName(22) + cDescription);
 
         List<String> lore = new ArrayList<>();
 
@@ -604,8 +602,8 @@ public class GuiSkulls implements SkullInter {
 
         SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
 
-        String name = plugin.getConfig().getString(getName(23) + cName);
-        String description = plugin.getConfig().getString(getName(23) + cDescription);
+        final String name = plugin.getConfig().getString(getName(23) + cName);
+        final String description = plugin.getConfig().getString(getName(23) + cDescription);
 
         List<String> lore = new ArrayList<>();
 
@@ -628,8 +626,8 @@ public class GuiSkulls implements SkullInter {
 
         SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
 
-        String name = plugin.getConfig().getString(getName(24) + cName);
-        String description = plugin.getConfig().getString(getName(24) + cDescription);
+        final String name = plugin.getConfig().getString(getName(24) + cName);
+        final String description = plugin.getConfig().getString(getName(24) + cDescription);
 
         List<String> lore = new ArrayList<>();
 
@@ -639,99 +637,439 @@ public class GuiSkulls implements SkullInter {
         skullMeta.setLore(lore);
         skullMeta.setOwner(getName(24));
 
+        skull.setItemMeta(skullMeta);
+
         return skull;
     }
 
 
     @Override
     public ItemStack Enderman() {
-        return null;
+
+        ItemStack skull = new ItemStack(Material.SKULL);
+
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+
+        final String name = plugin.getConfig().getString(getName(25) + cName);
+        final String description = plugin.getConfig().getString(getName(25) + cDescription);
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(25));
+
+        skull.setItemMeta(skullMeta);
+
+        return skull;
     }
 
 
     @Override
     public ItemStack Squid() {
-        return null;
+
+        ItemStack skull = new ItemStack(Material.SKULL);
+
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+
+        final String name = plugin.getConfig().getString(getName(26) + cName);
+        final String description = plugin.getConfig().getString(getName(26) + cDescription);
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(26));
+
+        skull.setItemMeta(skullMeta);
+
+        return skull;
     }
+
 
     @Override
     public ItemStack Herobrine() {
-        return null;
+
+        ItemStack skull = new ItemStack(Material.SKULL);
+
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+
+        final String name = plugin.getConfig().getString(getName(27) + cName);
+        final String description = plugin.getConfig().getString(getName(27) + cDescription);
+
+        List<String> lore = new ArrayList<>();
+
+        lore.add(translator(description));
+
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(27));
+
+        skull.setItemMeta(skullMeta);
+
+        return skull;
     }
+
 
     @Override
     public ItemStack Sun() {
-        return null;
+
+        ItemStack skull = new ItemStack(Material.SKULL);
+        
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+        
+        final String name = plugin.getConfig().getString(getName(28) + cName);
+        final String description = plugin.getConfig().getString(getName(28) + cDescription);
+        
+        List<String> lore = new ArrayList<>();
+        
+        lore.add(translator(description));
+        
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(28));
+        
+        skull.setItemMeta(skullMeta);
+        
+        return skull;
     }
 
+    
     @Override
     public ItemStack Mario() {
-        return null;
+        
+        ItemStack skull = new ItemStack(Material.SKULL);
+        
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+        
+        final String name = plugin.getConfig().getString(getName(29) + cName);
+        final String description = plugin.getConfig().getString(getName(29) + cDescription);
+        
+        List<String> lore = new ArrayList<>();
+        
+        lore.add(translator(description));
+        
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(29));
+        
+        return skull;
     }
 
+    
     @Override
     public ItemStack Luigi() {
-        return null;
+        
+        ItemStack skull = new ItemStack(Material.SKULL);
+        
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+        
+        final String name = plugin.getConfig().getString(getName(30) + cName);
+        final String description = plugin.getConfig().getString(getName(30) + cDescription);
+        
+        List<String> lore = new ArrayList<>();
+        
+        lore.add(translator(description));
+        
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(30));
+        
+        skull.setItemMeta(skullMeta);
+        
+        return skull;
     }
 
+    
     @Override
     public ItemStack Bowser() {
-        return null;
+        
+        ItemStack skull = new ItemStack(Material.SKULL);
+        
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+        
+        final String name = plugin.getConfig().getString(getName(31) + cName);
+        final String description = plugin.getConfig().getString(getName(31) + cDescription);
+        
+        List<String> lore = new ArrayList<>();
+        
+        lore.add(translator(description));
+        
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(31));
+        
+        skull.setItemMeta(skullMeta);
+        
+        return skull;
     }
+    
 
     @Override
     public ItemStack Browser() {
-        return null;
+        
+        ItemStack skull = new ItemStack(Material.SKULL);
+        
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+        
+        final String name = plugin.getConfig().getString(getName(32) + cName);
+        final String description = plugin.getConfig().getString(getName(32) + cDescription);
+        
+        List<String> lore = new ArrayList<>();
+        
+        lore.add(translator(description));
+        
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(32));
+        
+        skull.setItemMeta(skullMeta);
+        
+        return skull;
     }
 
+    
     @Override
     public ItemStack Toad() {
-        return null;
+        
+        ItemStack skull = new ItemStack(Material.SKULL);
+        
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+        
+        final String name = plugin.getConfig().getString(getName(33) + cName);
+        final String description = plugin.getConfig().getString(getName(33) + cDescription);
+        
+        List<String> lore = new ArrayList<>();
+        
+        lore.add(translator(description));
+        
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(33));
+
+        skull.setItemMeta(skullMeta);
+        
+        return skull;
     }
 
+    
     @Override
     public ItemStack Duck() {
-        return null;
+        
+        ItemStack skull = new ItemStack(Material.SKULL);
+        
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+        
+        final String name = plugin.getConfig().getString(getName(34) + cName);
+        final String description = plugin.getConfig().getString(getName(34) + cDescription);
+        
+        List<String> lore = new ArrayList<>();
+        
+        lore.add(translator(description));
+        
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(34));
+        
+        skull.setItemMeta(skullMeta);
+        
+        return skull;
     }
+    
 
     @Override
     public ItemStack Globe() {
-        return null;
+        
+        ItemStack skull = new ItemStack(Material.SKULL);
+        
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+        
+        final String name = plugin.getConfig().getString(getName(35) + cName);
+        final String description = plugin.getConfig().getString(getName(35) + cDescription);
+        
+        List<String> lore = new ArrayList<>();
+        
+        lore.add(translator(description));
+        
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(35));
+        
+        skull.setItemMeta(skullMeta);
+        
+        return skull;
     }
 
+    
     @Override
     public ItemStack Shark() {
-        return null;
+        
+        ItemStack skull = new ItemStack(Material.SKULL);
+        
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+        
+        final String name = plugin.getConfig().getString(getName(36) + cName);
+        final String description = plugin.getConfig().getString(getName(36) + cDescription);
+        
+        List<String> lore = new ArrayList<>();
+        
+        lore.add(translator(description));
+        
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(36));
+        
+        skull.setItemMeta(skullMeta);
+        
+        return skull;
     }
 
+    
     @Override
     public ItemStack Dog() {
-        return null;
+        
+        ItemStack skull = new ItemStack(Material.SKULL);
+        
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+        
+        final String name = plugin.getConfig().getString(getName(37) + cName);
+        final String description = plugin.getConfig().getString(getName(37) + cDescription);
+        
+        List<String> lore = new ArrayList<>();
+        
+        lore.add(translator(description));
+        
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(37));
+  
+        skull.setItemMeta(skullMeta);
+        
+        return skull;
     }
 
+    
     @Override
     public ItemStack Cat() {
-        return null;
+        
+        ItemStack skull = new ItemStack(Material.SKULL);
+        
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+        
+        final String name = plugin.getConfig().getString(getName(38) + cName);
+        final String description = plugin.getConfig().getString(getName(38) + cDescription);
+        
+        List<String> lore = new ArrayList<>();
+        
+        lore.add(translator(description));
+        
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(38));
+        
+        skull.setItemMeta(skullMeta);
+        
+        return skull;
     }
 
+    
     @Override
     public ItemStack Ocelot() {
-        return null;
+        
+        ItemStack skull = new ItemStack(Material.SKULL);
+        
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+        
+        final String name = plugin.getConfig().getString(getName(39) + cName);
+        final String description = plugin.getConfig().getString(getName(39) + cDescription);
+        
+        List<String> lore = new ArrayList<>();
+        
+        lore.add(translator(description));
+        
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(39));
+        
+        skull.setItemMeta(skullMeta);
+        
+        return skull;
     }
 
+    
     @Override
     public ItemStack Parrot() {
-        return null;
+        
+        ItemStack skull = new ItemStack(Material.SKULL);
+        
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+        
+        final String name = plugin.getConfig().getString(getName(40) + cName);
+        final String description = plugin.getConfig().getString(getName(40) + cDescription);
+        
+        List<String> lore = new ArrayList<>();
+        
+        lore.add(translator(description));
+        
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(40));
+        
+        skull.setItemMeta(skullMeta);
+        
+        return skull;
     }
 
+    
     @Override
     public ItemStack Slenderman() {
-        return null;
+        
+        ItemStack skull = new ItemStack(Material.SKULL);
+        
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+        
+        final String name = plugin.getConfig().getString(getName(41) + cName);
+        final String description = plugin.getConfig().getString(getName(41) + cDescription);
+        
+        List<String> lore = new ArrayList<>();
+        
+        lore.add(translator(description));
+        
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(41));
+        
+        skull.setItemMeta(skullMeta);
+        
+        return skull;
     }
 
+    
     @Override
     public ItemStack Rabbit() {
-        return null;
+        
+        ItemStack skull = new ItemStack(Material.SKULL);
+        
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+        
+        final String name = plugin.getConfig().getString(getName(42) + cName);
+        final String description = plugin.getConfig().getString(getName(42) + cDescription);
+        
+        List<String> lore = new ArrayList<>();
+        
+        lore.add(translator(description));
+        
+        skullMeta.setDisplayName(translator(name));
+        skullMeta.setLore(lore);
+        skullMeta.setOwner(getName(42));
+        
+        skull.setItemMeta(skullMeta);
+        
+        return skull;
     }
 
 
