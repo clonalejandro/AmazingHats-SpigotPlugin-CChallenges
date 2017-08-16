@@ -40,10 +40,6 @@ public class PlayerListeners implements Listener {
 
     /** REST **/
 
-    /**
-     * @param e
-     */
-
     @EventHandler
     public void preventHat(InventoryClickEvent e){
 
