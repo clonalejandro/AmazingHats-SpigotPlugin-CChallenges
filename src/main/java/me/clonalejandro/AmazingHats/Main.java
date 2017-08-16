@@ -60,9 +60,7 @@ public class Main extends JavaPlugin {
 
     @Override
     public void onEnable(){
-
         try {
-
             instance = this;
 
             Config();
@@ -73,7 +71,6 @@ public class Main extends JavaPlugin {
         } catch (Exception ex){
             ex.printStackTrace();
             Bukkit.getConsoleSender().sendMessage(ChatColor.AQUA + "AmazingHats> " + ChatColor.DARK_RED + "several error");
-
             instance = null;
         }
     }
@@ -91,7 +88,6 @@ public class Main extends JavaPlugin {
     private void Config(){
 
         try {
-
             saveDefaultConfig();
 
             String fhatName = All.getHatName();
@@ -102,10 +98,8 @@ public class Main extends JavaPlugin {
 
             Bukkit.getConsoleSender().sendMessage(ChatColor.AQUA + "AmazingHats> " + ChatColor.DARK_GREEN + "config loaded");
         } catch (Exception ex){
-
             ex.printStackTrace();
             Bukkit.getConsoleSender().sendMessage(ChatColor.AQUA + "AmazingHats> " + ChatColor.YELLOW + "several error in config");
-
             instance = null;
         }
     }
@@ -149,5 +143,6 @@ public class Main extends JavaPlugin {
     public GuiBlocks getGuiBlocks(){
         return guiBlocks;
     }
+
 
 }
