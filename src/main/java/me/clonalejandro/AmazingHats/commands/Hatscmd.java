@@ -2,7 +2,6 @@ package me.clonalejandro.AmazingHats.commands;
 
 import me.clonalejandro.AmazingHats.Main;
 import me.clonalejandro.AmazingHats.gui.HatGui;
-import me.clonalejandro.AmazingHats.hats.blocks.BlockHat;
 import me.clonalejandro.AmazingHats.utils.HatManager;
 
 import org.bukkit.Bukkit;
@@ -51,9 +50,7 @@ public class Hatscmd implements CommandExecutor{
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String arg, String[] args){
-
         if (cmd.getName().equalsIgnoreCase("hat")){
-
             if (args.length > 0){
 
                 if (args[0].equalsIgnoreCase("remove")){
@@ -67,13 +64,9 @@ public class Hatscmd implements CommandExecutor{
                 }
 
             }
-
-            if (args.length == 0){
+            if (args.length == 0)
                 sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&c&lAmazingHats> &finvalid format use: &b/hat &e<type>"));
-            }
-
         }
-
         return true;
     }
 
