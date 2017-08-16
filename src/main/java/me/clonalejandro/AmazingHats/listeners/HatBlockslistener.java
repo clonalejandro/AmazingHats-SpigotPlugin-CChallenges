@@ -1,7 +1,6 @@
 package me.clonalejandro.AmazingHats.listeners;
 
 import me.clonalejandro.AmazingHats.Main;
-import me.clonalejandro.AmazingHats.gui.GuiBlocks;
 import me.clonalejandro.AmazingHats.gui.HatGui;
 import me.clonalejandro.AmazingHats.hats.blocks.BlockHat;
 import me.clonalejandro.AmazingHats.utils.HatManager;
@@ -61,13 +60,16 @@ public class HatBlockslistener implements Listener{
     public void BlockHatInventory(InventoryClickEvent e){
 
         Player p = (Player) e.getWhoClicked();
+
         HatGui hatGui = new HatGui(plugin);
+
         String name = hatGui.serial;
+
         name = ChatColor.translateAlternateColorCodes('&', name);
 
         if (e.getClickedInventory().getName().equalsIgnoreCase(name)){
             ItemStack item = getItem(e);
-            ifs(item, p);//E is required for instance the void "ifs"
+            ifs(item, p);
 
             if (cancelled) e.setCancelled(true);
             else e.setCancelled(false);
