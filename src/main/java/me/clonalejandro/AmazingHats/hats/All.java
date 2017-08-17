@@ -176,4 +176,53 @@ public class All {
             "Slenderman",
             "Rabbit"
     };
+
+
+    public static String[] BlocksAll = {
+            "Grass",
+            "Stone",
+            "Diamond_Block",
+            "Gold_Block",
+            "Iron_Block",
+            "Emerald_Block",
+            "Beacon",
+            "Diamond_Ore",
+            "Gold_Ore",
+            "Iron_Ore",
+            "Emerald_Ore",
+            "Redstone_Block",
+            "Lapis_Block",
+            "Lapis_Ore",
+            "Redstone_Ore",
+            "Command_Block",
+            "Glass",
+            "Spawner",
+            "Anvil",
+            "Obsidian",
+            "Piston",
+            "TNT",
+            "Wool",
+            "Red_Wool",
+            "Blue_Wool",
+            "Cyan_Wool",
+            "Purple_Wool",
+            "Green_Wool",
+            "Orange_Wool",
+            "Yellow_Wool",
+            "Gray_Wool",
+            "DarkRed_Wool",
+            "DarkBlue_Wool",
+            "DarkPurple_Wool",
+            "DarkGreen_Wool",
+            "DarkGray_Wool",
+            "Black_Wool",
+            "Cactus",
+            "Sand",
+            "Crafting_table",
+            "Enchanting_table",
+            "Chest",
+            "Enderchest",
+    };
+
+
 }
