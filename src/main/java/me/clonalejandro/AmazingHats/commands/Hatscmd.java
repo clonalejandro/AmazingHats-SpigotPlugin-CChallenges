@@ -47,7 +47,6 @@ public class Hatscmd implements CommandExecutor{
      * @param args
      * @return
      */
-
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String arg, String[] args){
         if (cmd.getName().equalsIgnoreCase("hat")){
