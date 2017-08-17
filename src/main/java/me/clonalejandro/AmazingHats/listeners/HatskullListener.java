@@ -2,6 +2,7 @@ package me.clonalejandro.AmazingHats.listeners;
 
 import me.clonalejandro.AmazingHats.Main;
 import me.clonalejandro.AmazingHats.gui.HatGui;
+import me.clonalejandro.AmazingHats.hats.All;
 import me.clonalejandro.AmazingHats.hats.heads.HeadHat;
 import me.clonalejandro.AmazingHats.utils.HatManager;
 import org.bukkit.ChatColor;
@@ -76,12 +77,30 @@ public class HatskullListener implements Listener {
     }
 
 
+    /**
+     * @param item
+     * @param p
+     */
     private void ifs(ItemStack item, Player p){
+        final String str = item.getItemMeta().getDisplayName();
+        HatManager hatManager = new HatManager(plugin);
 
-        if (item.getItemMeta().getDisplayName().contains("Notch")){
-            HatManager hatManager = new HatManager(plugin);
-            hatManager.setSkullHat(p, HeadHat.Notch);
-            cancelled = true;
+        for (String i : All.SkullsAll) {
+            if (str.contains(i))
+                manager(hatManager, p, HeadHat.valueOf(i));
         }
     }
+
+
+    /**
+     * @param hatManager
+     * @param player
+     * @param hat
+     */
+    private void manager(HatManager hatManager, Player player, HeadHat hat){
+        hatManager.setSkullHat(player, hat);
+        cancelled = true;
+    }
+
+
 }
