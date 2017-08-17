@@ -6,6 +6,7 @@ import me.clonalejandro.AmazingHats.gui.HatGui;
 import me.clonalejandro.AmazingHats.hats.All;
 import me.clonalejandro.AmazingHats.hats.blocks.BlockHat;
 import me.clonalejandro.AmazingHats.listeners.HatBlockslistener;
+import me.clonalejandro.AmazingHats.listeners.HatskullListener;
 import me.clonalejandro.AmazingHats.listeners.PlayerListeners;
 import me.clonalejandro.AmazingHats.utils.HatManager;
 
@@ -109,6 +110,7 @@ public class Main extends JavaPlugin {
         PluginManager pm = instance.getServer().getPluginManager();
         pm.registerEvents(new PlayerListeners(instance), instance);
         pm.registerEvents(new HatBlockslistener(instance), instance);
+        pm.registerEvents(new HatskullListener(instance), instance);
     }
 
 
