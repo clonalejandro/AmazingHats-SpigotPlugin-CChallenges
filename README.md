@@ -1,1 +1,2 @@
 AmazingHats
+//TODO: Readme & config
