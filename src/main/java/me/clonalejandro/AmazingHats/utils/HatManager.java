@@ -52,7 +52,6 @@ public class HatManager {
      * @param player
      * @param hat
      */
-
     public void setBlockHat(Player player, BlockHat hat) {
 
         ItemStack helmet = player.getInventory().getHelmet();
@@ -86,7 +85,6 @@ public class HatManager {
      * @param player
      * @param hat
      */
-
     public void setSkullHat(Player player, HeadHat hat){
 
         ItemStack helmet = player.getInventory().getHelmet();
@@ -119,7 +117,6 @@ public class HatManager {
      * @param player
      * @return
      */
-
     private ItemStack getHat(Player player) {
 
         ItemStack helmet = player.getInventory().getHelmet();
@@ -135,7 +132,6 @@ public class HatManager {
     /**
      * @param player
      */
-
     public void removeHat(Player player){
         getHat(player);
         if (hHat){
@@ -151,10 +147,8 @@ public class HatManager {
      * @param helmet
      * @param player
      */
-
     private void cleanner(ItemStack helmet, Player player){
         switch (helmet.getType()) {
-
             default:
                 removeHat(player);
                 break;
