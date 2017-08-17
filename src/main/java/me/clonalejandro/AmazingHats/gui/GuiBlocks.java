@@ -45,8 +45,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack grass = new ItemStack(Material.GRASS, 1);
 
-        String description = plugin.getConfig().getString("Grass.Description");
-        String name = plugin.getConfig().getString("Grass.Name");
+        final String description = plugin.getConfig().getString("Grass.Description");
+        final String name = plugin.getConfig().getString("Grass.Name");
 
         List<String> lore = new ArrayList<>();
 
@@ -69,8 +69,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack stone = new ItemStack(Material.STONE, 1);
 
-        String description = plugin.getConfig().getString("Stone.Description");
-        String name = plugin.getConfig().getString("Stone.Name");
+        final String description = plugin.getConfig().getString("Stone.Description");
+        final String name = plugin.getConfig().getString("Stone.Name");
 
         List<String> lore = new ArrayList<>();
 
@@ -93,8 +93,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack diamondblock = new ItemStack(Material.DIAMOND_BLOCK, 1);
 
-        String description = plugin.getConfig().getString("Diamond_Block.Description");
-        String name = plugin.getConfig().getString("Diamond_Block.Name");
+        final String description = plugin.getConfig().getString("Diamond_Block.Description");
+        final String name = plugin.getConfig().getString("Diamond_Block.Name");
 
         List<String> lore = new ArrayList<>();
 
@@ -117,8 +117,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack goldblock = new ItemStack(Material.GOLD_BLOCK, 1);
 
-        String description = plugin.getConfig().getString("Gold_Block.Description");
-        String name = plugin.getConfig().getString("Gold_Block.Name");
+        final String description = plugin.getConfig().getString("Gold_Block.Description");
+        final String name = plugin.getConfig().getString("Gold_Block.Name");
 
         List<String> lore = new ArrayList<>();
 
@@ -140,8 +140,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack ironblock = new ItemStack(Material.IRON_BLOCK, 1);
 
-        String description = plugin.getConfig().getString("Iron_Block.Description");
-        String name = plugin.getConfig().getString("Iron_Block.Name");
+        final String description = plugin.getConfig().getString("Iron_Block.Description");
+        final String name = plugin.getConfig().getString("Iron_Block.Name");
 
         List<String> lore = new ArrayList<>();
 
@@ -163,8 +163,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack emeraldblock = new ItemStack(Material.EMERALD_BLOCK, 1);
 
-        String description = plugin.getConfig().getString("Emerald_Block.Description");
-        String name = plugin.getConfig().getString("Emerald_Block.Name");
+        final String description = plugin.getConfig().getString("Emerald_Block.Description");
+        final String name = plugin.getConfig().getString("Emerald_Block.Name");
 
         List<String> lore = new ArrayList<>();
 
@@ -186,8 +186,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack beacon = new ItemStack(Material.BEACON, 1);
 
-        String description = plugin.getConfig().getString("Beacon.Description");
-        String name = plugin.getConfig().getString("Beacon.Name");
+        final String description = plugin.getConfig().getString("Beacon.Description");
+        final String name = plugin.getConfig().getString("Beacon.Name");
 
         List<String> lore = new ArrayList<>();
 
@@ -209,8 +209,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack diamondore = new ItemStack(Material.DIAMOND_ORE, 1);
 
-        String description = plugin.getConfig().getString("Diamond_Ore.Description");
-        String name = plugin.getConfig().getString("Diamond_Ore.Name");
+        final String description = plugin.getConfig().getString("Diamond_Ore.Description");
+        final String name = plugin.getConfig().getString("Diamond_Ore.Name");
 
         List<String> lore = new ArrayList<>();
 
@@ -232,8 +232,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack goldore = new ItemStack(Material.GOLD_ORE, 1);
 
-        String description = plugin.getConfig().getString("Gold_Ore.Description");
-        String name = plugin.getConfig().getString("Gold_Ore.Name");
+        final String description = plugin.getConfig().getString("Gold_Ore.Description");
+        final String name = plugin.getConfig().getString("Gold_Ore.Name");
 
         List<String> lore = new ArrayList<>();
 
@@ -255,8 +255,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack ironore = new ItemStack(Material.IRON_ORE, 1);
 
-        String description = plugin.getConfig().getString("Iron_Ore.Description");
-        String name = plugin.getConfig().getString("Iron_Ore.Name");
+        final String description = plugin.getConfig().getString("Iron_Ore.Description");
+        final String name = plugin.getConfig().getString("Iron_Ore.Name");
 
         List<String> lore = new ArrayList<>();
 
@@ -278,8 +278,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack emeraldore = new ItemStack(Material.EMERALD_ORE, 1);
 
-        String description = plugin.getConfig().getString("Emerald_Ore.Description");
-        String name = plugin.getConfig().getString("Emerald_Ore.Name");
+        final String description = plugin.getConfig().getString("Emerald_Ore.Description");
+        final String name = plugin.getConfig().getString("Emerald_Ore.Name");
 
         List<String> lore = new ArrayList<>();
 
@@ -301,8 +301,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack redstoneblock = new ItemStack(Material.REDSTONE_BLOCK, 1);
 
-        String description = plugin.getConfig().getString("Redstone_Block.Description");
-        String name = plugin.getConfig().getString("Redstone_Block.Name");
+        final String description = plugin.getConfig().getString("Redstone_Block.Description");
+        final String name = plugin.getConfig().getString("Redstone_Block.Name");
 
         ItemMeta redstoneblockMeta = redstoneblock.getItemMeta();
 
@@ -324,8 +324,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack lapisblock = new ItemStack(Material.LAPIS_BLOCK, 1);
 
-        String description = plugin.getConfig().getString("Lapis_Block.Description");
-        String name = plugin.getConfig().getString("Lapis_Block.Name");
+        final String description = plugin.getConfig().getString("Lapis_Block.Description");
+        final String name = plugin.getConfig().getString("Lapis_Block.Name");
 
         ItemMeta lapisblockMeta = lapisblock.getItemMeta();
 
@@ -347,8 +347,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack lapisore = new ItemStack(Material.LAPIS_ORE, 1);
 
-        String description = plugin.getConfig().getString("Lapis_Ore.Description");
-        String name = plugin.getConfig().getString("Lapis_Ore.Name");
+        final String description = plugin.getConfig().getString("Lapis_Ore.Description");
+        final String name = plugin.getConfig().getString("Lapis_Ore.Name");
 
         ItemMeta lapisoreMeta = lapisore.getItemMeta();
 
@@ -370,8 +370,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack redstoneore = new ItemStack(Material.REDSTONE_ORE, 1);
 
-        String description = plugin.getConfig().getString("Redstone_Ore.Description");
-        String name = plugin.getConfig().getString("Redstone_Ore.Name");
+        final String description = plugin.getConfig().getString("Redstone_Ore.Description");
+        final String name = plugin.getConfig().getString("Redstone_Ore.Name");
 
         ItemMeta redstoneoreMeta = redstoneore.getItemMeta();
 
@@ -393,8 +393,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack commandblock = new ItemStack(Material.COMMAND, 1);
 
-        String description = plugin.getConfig().getString("Command_Block.Description");
-        String name = plugin.getConfig().getString("Command_Block.Name");
+        final String description = plugin.getConfig().getString("Command_Block.Description");
+        final String name = plugin.getConfig().getString("Command_Block.Name");
 
         ItemMeta commandblockMeta = commandblock.getItemMeta();
 
@@ -416,8 +416,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack glass = new ItemStack(Material.GLASS, 1);
 
-        String description = plugin.getConfig().getString("Glass.Description");
-        String name = plugin.getConfig().getString("Glass.Name");
+        final String description = plugin.getConfig().getString("Glass.Description");
+        final String name = plugin.getConfig().getString("Glass.Name");
 
         ItemMeta glassMeta = glass.getItemMeta();
 
@@ -439,8 +439,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack spawner = new ItemStack(Material.MOB_SPAWNER, 1);
 
-        String description = plugin.getConfig().getString("Spawner.Description");
-        String name = plugin.getConfig().getString("Spawner.Name");
+        final String description = plugin.getConfig().getString("Spawner.Description");
+        final String name = plugin.getConfig().getString("Spawner.Name");
 
         ItemMeta spawnerMeta = spawner.getItemMeta();
 
@@ -462,8 +462,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack anvil = new ItemStack(Material.ANVIL, 1);
 
-        String description = plugin.getConfig().getString("Anvil.Description");
-        String name = plugin.getConfig().getString("Anvil.Name");
+        final String description = plugin.getConfig().getString("Anvil.Description");
+        final String name = plugin.getConfig().getString("Anvil.Name");
 
         ItemMeta anvilMeta = anvil.getItemMeta();
 
@@ -485,8 +485,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack obsidian = new ItemStack(Material.OBSIDIAN, 1);
 
-        String description = plugin.getConfig().getString("Obsidian.Description");
-        String name = plugin.getConfig().getString("Obsidian.Name");
+        final String description = plugin.getConfig().getString("Obsidian.Description");
+        final String name = plugin.getConfig().getString("Obsidian.Name");
 
         ItemMeta obsidianMeta = obsidian.getItemMeta();
 
@@ -508,8 +508,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack piston = new ItemStack(Material.PISTON_STICKY_BASE, 1);
 
-        String description = plugin.getConfig().getString("Piston.Description");
-        String name = plugin.getConfig().getString("Piston.Name");
+        final String description = plugin.getConfig().getString("Piston.Description");
+        final String name = plugin.getConfig().getString("Piston.Name");
 
         ItemMeta pistonMeta = piston.getItemMeta();
 
@@ -531,8 +531,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack tnt = new ItemStack(Material.TNT, 1);
 
-        String description = plugin.getConfig().getString("TNT.Description");
-        String name = plugin.getConfig().getString("TNT.Name");
+        final String description = plugin.getConfig().getString("TNT.Description");
+        final String name = plugin.getConfig().getString("TNT.Name");
 
         ItemMeta tntMeta = tnt.getItemMeta();
 
@@ -554,8 +554,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack wool = new ItemStack(Material.WOOL, 1);
 
-        String description = plugin.getConfig().getString("Wool.Description");
-        String name = plugin.getConfig().getString("Wool.Name");
+        final String description = plugin.getConfig().getString("Wool.Description");
+        final String name = plugin.getConfig().getString("Wool.Name");
 
         ItemMeta woolMeta = wool.getItemMeta();
 
@@ -577,8 +577,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack redwool = new ItemStack(Material.WOOL, 1, (short) 6);
 
-        String description = plugin.getConfig().getString("Red_Wool.Description");
-        String name = plugin.getConfig().getString("Red_Wool.Name");
+        final String description = plugin.getConfig().getString("Red_Wool.Description");
+        final String name = plugin.getConfig().getString("Red_Wool.Name");
 
         ItemMeta redwoolMeta = redwool.getItemMeta();
 
@@ -600,8 +600,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack bluewool = new ItemStack(Material.WOOL, 1, (short) 3);
 
-        String description = plugin.getConfig().getString("Blue_Wool.Description");
-        String name = plugin.getConfig().getString("Blue_Wool.Name");
+        final String description = plugin.getConfig().getString("Blue_Wool.Description");
+        final String name = plugin.getConfig().getString("Blue_Wool.Name");
 
         ItemMeta bluewoolMeta = bluewool.getItemMeta();
 
@@ -623,8 +623,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack cyanwool = new ItemStack(Material.WOOL, 1, (short) 9);
 
-        String description = plugin.getConfig().getString("Cyan_Wool.Description");
-        String name = plugin.getConfig().getString("Cyan_Wool.Name");
+        final String description = plugin.getConfig().getString("Cyan_Wool.Description");
+        final String name = plugin.getConfig().getString("Cyan_Wool.Name");
 
         ItemMeta cyanwoolMeta = cyanwool.getItemMeta();
 
@@ -646,8 +646,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack purplewool = new ItemStack(Material.WOOL, 1, (short) 2);
 
-        String description = plugin.getConfig().getString("Purple_Wool.Description");
-        String name = plugin.getConfig().getString("Purple_Wool.Name");
+        final String description = plugin.getConfig().getString("Purple_Wool.Description");
+        final String name = plugin.getConfig().getString("Purple_Wool.Name");
 
         ItemMeta purplewoolMeta = purplewool.getItemMeta();
 
@@ -669,8 +669,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack greenwool = new ItemStack(Material.WOOL, 1, (short) 5);
 
-        String description = plugin.getConfig().getString("Green_Wool.Description");
-        String name = plugin.getConfig().getString("Green_Wool.Name");
+        final String description = plugin.getConfig().getString("Green_Wool.Description");
+        final String name = plugin.getConfig().getString("Green_Wool.Name");
 
         ItemMeta greenwoolMeta = greenwool.getItemMeta();
 
@@ -692,8 +692,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack orangewool = new ItemStack(Material.WOOL, 1, (short) 1);
 
-        String description = plugin.getConfig().getString("Orange_Wool.Description");
-        String name = plugin.getConfig().getString("Orange_Wool.Name");
+        final String description = plugin.getConfig().getString("Orange_Wool.Description");
+        final String name = plugin.getConfig().getString("Orange_Wool.Name");
 
         ItemMeta orangewoolMeta = orangewool.getItemMeta();
 
@@ -715,8 +715,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack yellowwool = new ItemStack(Material.WOOL, 1, (short) 4);
 
-        String description = plugin.getConfig().getString("Yellow_Wool.Description");
-        String name = plugin.getConfig().getString("Yellow_Wool.Name");
+        final String description = plugin.getConfig().getString("Yellow_Wool.Description");
+        final String name = plugin.getConfig().getString("Yellow_Wool.Name");
 
         ItemMeta yellowwoolMeta = yellowwool.getItemMeta();
 
@@ -738,8 +738,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack graywool = new ItemStack(Material.WOOL, 1, (short) 8);
 
-        String description = plugin.getConfig().getString("Gray_Wool.Description");
-        String name = plugin.getConfig().getString("Gray_Wool.Name");
+        final String description = plugin.getConfig().getString("Gray_Wool.Description");
+        final String name = plugin.getConfig().getString("Gray_Wool.Name");
 
         ItemMeta graywoolMeta = graywool.getItemMeta();
 
@@ -761,8 +761,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack darkredwool = new ItemStack(Material.WOOL, 1, (short) 14);
 
-        String description = plugin.getConfig().getString("DarkRed_Wool.Description");
-        String name = plugin.getConfig().getString("DarkRed_Wool.Name");
+        final String description = plugin.getConfig().getString("DarkRed_Wool.Description");
+        final String name = plugin.getConfig().getString("DarkRed_Wool.Name");
 
         ItemMeta darkredwoolMeta = darkredwool.getItemMeta();
 
@@ -784,8 +784,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack darkbluewool = new ItemStack(Material.WOOL, 1, (short) 11);
 
-        String description = plugin.getConfig().getString("DarkBlue_Wool.Description");
-        String name = plugin.getConfig().getString("DarkBlue_Wool.Name");
+        final String description = plugin.getConfig().getString("DarkBlue_Wool.Description");
+        final String name = plugin.getConfig().getString("DarkBlue_Wool.Name");
 
         ItemMeta darkbluewoolMeta = darkbluewool.getItemMeta();
 
@@ -807,8 +807,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack darkpurplewool = new ItemStack(Material.WOOL, 1, (short) 10);
 
-        String description = plugin.getConfig().getString("DarkPurple_Wool.Description");
-        String name = plugin.getConfig().getString("DarkPurple_Wool.Name");
+        final String description = plugin.getConfig().getString("DarkPurple_Wool.Description");
+        final String name = plugin.getConfig().getString("DarkPurple_Wool.Name");
 
         ItemMeta darkpurpleMeta = darkpurplewool.getItemMeta();
 
@@ -830,8 +830,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack darkgreenwool = new ItemStack(Material.WOOL, 1, (short) 13);
 
-        String description = plugin.getConfig().getString("DarkGreen_Wool.Description");
-        String name = plugin.getConfig().getString("DarkGreen_Wool.Name");
+        final String description = plugin.getConfig().getString("DarkGreen_Wool.Description");
+        final String name = plugin.getConfig().getString("DarkGreen_Wool.Name");
 
         ItemMeta darkgreenwoolMeta = darkgreenwool.getItemMeta();
 
@@ -853,8 +853,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack darkgraywool = new ItemStack(Material.WOOL, 1, (short) 7);
 
-        String description = plugin.getConfig().getString("DarkGray_Wool.Description");
-        String name = plugin.getConfig().getString("DarkGray_Wool.Name");
+        final String description = plugin.getConfig().getString("DarkGray_Wool.Description");
+        final String name = plugin.getConfig().getString("DarkGray_Wool.Name");
 
         ItemMeta darkgraywoolMeta = darkgraywool.getItemMeta();
 
@@ -876,8 +876,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack blackwool = new ItemStack(Material.WOOL, 1, (short) 15);
 
-        String description = plugin.getConfig().getString("Black_Wool.Description");
-        String name = plugin.getConfig().getString("Black_Wool.Name");
+        final String description = plugin.getConfig().getString("Black_Wool.Description");
+        final String name = plugin.getConfig().getString("Black_Wool.Name");
 
         ItemMeta blackwoolMeta = blackwool.getItemMeta();
 
@@ -899,8 +899,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack cactus = new ItemStack(Material.CACTUS, 1);
 
-        String description = plugin.getConfig().getString("Cactus.Description");
-        String name = plugin.getConfig().getString("Cactus.Name");
+        final String description = plugin.getConfig().getString("Cactus.Description");
+        final String name = plugin.getConfig().getString("Cactus.Name");
 
         ItemMeta cactusMeta = cactus.getItemMeta();
 
@@ -922,8 +922,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack sand = new ItemStack(Material.SAND, 1);
 
-        String description = plugin.getConfig().getString("Sand.Description");
-        String name = plugin.getConfig().getString("Sand.Name");
+        final String description = plugin.getConfig().getString("Sand.Description");
+        final String name = plugin.getConfig().getString("Sand.Name");
 
         ItemMeta sandMeta = sand.getItemMeta();
 
@@ -945,8 +945,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack craftingtable = new ItemStack(Material.WORKBENCH, 1);
 
-        String description = plugin.getConfig().getString("Crafting_table.Description");
-        String name = plugin.getConfig().getString("Crafting_table.Name");
+        final String description = plugin.getConfig().getString("Crafting_table.Description");
+        final String name = plugin.getConfig().getString("Crafting_table.Name");
 
         ItemMeta craftingtableMeta = craftingtable.getItemMeta();
 
@@ -968,8 +968,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack enchantingtable = new ItemStack(Material.ENCHANTMENT_TABLE, 1);
 
-        String description = plugin.getConfig().getString("Enchanting_table.Description");
-        String name = plugin.getConfig().getString("Enchanting_table.Name");
+        final String description = plugin.getConfig().getString("Enchanting_table.Description");
+        final String name = plugin.getConfig().getString("Enchanting_table.Name");
 
         ItemMeta enchantingtableMeta = enchantingtable.getItemMeta();
 
@@ -991,8 +991,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack chest = new ItemStack(Material.CHEST, 1);
 
-        String description = plugin.getConfig().getString("Chest.Description");
-        String name = plugin.getConfig().getString("Chest.Name");
+        final String description = plugin.getConfig().getString("Chest.Description");
+        final String name = plugin.getConfig().getString("Chest.Name");
 
         ItemMeta chestMeta = chest.getItemMeta();
 
@@ -1014,8 +1014,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack enderchest = new ItemStack(Material.ENDER_CHEST, 1);
 
-        String description = plugin.getConfig().getString("Enderchest.Description");
-        String name = plugin.getConfig().getString("Enderchest.Name");
+        final String description = plugin.getConfig().getString("Enderchest.Description");
+        final String name = plugin.getConfig().getString("Enderchest.Name");
 
         ItemMeta enderchestMeta = enderchest.getItemMeta();
 
@@ -1037,8 +1037,8 @@ public class GuiBlocks implements BlocksInter{
 
         ItemStack arrow = new ItemStack(Material.ARROW, 1);
 
-        String description = "&fNext &epage";
-        String name = "&6Next page";
+        final String description = "&fNext &epage";
+        final String name = "&6Next page";
 
         ItemMeta arrowMeta = arrow.getItemMeta();
 
@@ -1062,7 +1062,6 @@ public class GuiBlocks implements BlocksInter{
      * @param text
      * @return
      */
-
     private String translator(String text){
         return ChatColor.translateAlternateColorCodes('&', text);
     }
