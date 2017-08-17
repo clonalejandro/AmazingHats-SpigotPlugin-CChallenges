@@ -40,16 +40,28 @@ public class HatGui {
     /** REST **/
 
     /**
-     * @param p
+     * @param player
      */
-    public void openGUI(Player p){
-
+    public void openGUI(Player player){
         Inventory inventory = plugin.getServer().createInventory(null, 45, name);
         GuiBlocks guiBlocks = new GuiBlocks(plugin);
 
         ItemBs(guiBlocks, inventory);
 
-        p.openInventory(inventory);
+        player.openInventory(inventory);
+    }
+
+
+    /**
+     * @param player
+     */
+    public void openArrow(Player player){
+        Inventory inventory = plugin.getServer().createInventory(null, 45, name);
+        GuiSkulls guiSkulls = new GuiSkulls(plugin);
+
+        ItemSk(guiSkulls, inventory);
+
+        player.openInventory(inventory);
     }
 
 
@@ -58,50 +70,106 @@ public class HatGui {
      * @param inventory
      */
     private void ItemBs(GuiBlocks guiBlocks, Inventory inventory){
-        inventory.setItem(0, guiBlocks.Grass());
-        inventory.setItem(1, guiBlocks.Stone());
-        inventory.setItem(2, guiBlocks.Diamond_Block());
-        inventory.setItem(3, guiBlocks.Gold_Block());
-        inventory.setItem(4, guiBlocks.Iron_Block());
-        inventory.setItem(5, guiBlocks.Emerald_Block());
-        inventory.setItem(6, guiBlocks.Beacon());
-        inventory.setItem(7, guiBlocks.Diamond_Ore());
-        inventory.setItem(8, guiBlocks.Gold_Ore());
-        inventory.setItem(9, guiBlocks.Iron_Ore());
-        inventory.setItem(10, guiBlocks.Emerald_Ore());
-        inventory.setItem(11, guiBlocks.Redstone_Block());
-        inventory.setItem(12, guiBlocks.Redstone_Ore());
-        inventory.setItem(13, guiBlocks.Lapis_Block());
-        inventory.setItem(14, guiBlocks.Lapis_Ore());
-        inventory.setItem(15, guiBlocks.Command_Block());
-        inventory.setItem(16, guiBlocks.Glass());
-        inventory.setItem(17, guiBlocks.Spawner());
-        inventory.setItem(18, guiBlocks.Anvil());
-        inventory.setItem(19, guiBlocks.Obsidian());
-        inventory.setItem(20, guiBlocks.Piston());
-        inventory.setItem(21, guiBlocks.TNT());
-        inventory.setItem(22, guiBlocks.Wool());
-        inventory.setItem(23, guiBlocks.Red_Wool());
-        inventory.setItem(24, guiBlocks.Blue_Wool());
-        inventory.setItem(25, guiBlocks.Cyan_Wool());
-        inventory.setItem(26, guiBlocks.Purple_Wool());
-        inventory.setItem(27, guiBlocks.Green_Wool());
-        inventory.setItem(28, guiBlocks.Orange_Wool());
-        inventory.setItem(29, guiBlocks.Yellow_Wool());
-        inventory.setItem(30, guiBlocks.Gray_Wool());
-        inventory.setItem(31, guiBlocks.DarkRed_Wool());
-        inventory.setItem(32, guiBlocks.DarkBlue_Wool());
-        inventory.setItem(33, guiBlocks.DarkPurple_Wool());
-        inventory.setItem(34, guiBlocks.DarkGreen_Wool());
-        inventory.setItem(35, guiBlocks.DarkGray_Wool());
-        inventory.setItem(36, guiBlocks.Black_Wool());
-        inventory.setItem(37, guiBlocks.Cactus());
-        inventory.setItem(38, guiBlocks.Sand());
-        inventory.setItem(39, guiBlocks.Crafting_Table());
-        inventory.setItem(40, guiBlocks.Enchanting_Table());
-        inventory.setItem(41, guiBlocks.Chest());
-        inventory.setItem(42, guiBlocks.Enderchest());
-        inventory.setItem(44, guiBlocks.Arrow());
+        int i = 0;
+
+        inventory.setItem(i, guiBlocks.Grass());
+        inventory.setItem(++i, guiBlocks.Stone());
+        inventory.setItem(++i, guiBlocks.Diamond_Block());
+        inventory.setItem(++i, guiBlocks.Gold_Block());
+        inventory.setItem(++i, guiBlocks.Iron_Block());
+        inventory.setItem(++i, guiBlocks.Emerald_Block());
+        inventory.setItem(++i, guiBlocks.Beacon());
+        inventory.setItem(++i, guiBlocks.Diamond_Ore());
+        inventory.setItem(++i, guiBlocks.Gold_Ore());
+        inventory.setItem(++i, guiBlocks.Iron_Ore());
+        inventory.setItem(++i, guiBlocks.Emerald_Ore());
+        inventory.setItem(++i, guiBlocks.Redstone_Block());
+        inventory.setItem(++i, guiBlocks.Redstone_Ore());
+        inventory.setItem(++i, guiBlocks.Lapis_Block());
+        inventory.setItem(++i, guiBlocks.Lapis_Ore());
+        inventory.setItem(++i, guiBlocks.Command_Block());
+        inventory.setItem(++i, guiBlocks.Glass());
+        inventory.setItem(++i, guiBlocks.Spawner());
+        inventory.setItem(++i, guiBlocks.Anvil());
+        inventory.setItem(++i, guiBlocks.Obsidian());
+        inventory.setItem(++i, guiBlocks.Piston());
+        inventory.setItem(++i, guiBlocks.TNT());
+        inventory.setItem(++i, guiBlocks.Wool());
+        inventory.setItem(++i, guiBlocks.Red_Wool());
+        inventory.setItem(++i, guiBlocks.Blue_Wool());
+        inventory.setItem(++i, guiBlocks.Cyan_Wool());
+        inventory.setItem(++i, guiBlocks.Purple_Wool());
+        inventory.setItem(++i, guiBlocks.Green_Wool());
+        inventory.setItem(++i, guiBlocks.Orange_Wool());
+        inventory.setItem(++i, guiBlocks.Yellow_Wool());
+        inventory.setItem(++i, guiBlocks.Gray_Wool());
+        inventory.setItem(++i, guiBlocks.DarkRed_Wool());
+        inventory.setItem(++i, guiBlocks.DarkBlue_Wool());
+        inventory.setItem(++i, guiBlocks.DarkPurple_Wool());
+        inventory.setItem(++i, guiBlocks.DarkGreen_Wool());
+        inventory.setItem(++i, guiBlocks.DarkGray_Wool());
+        inventory.setItem(++i, guiBlocks.Black_Wool());
+        inventory.setItem(++i, guiBlocks.Cactus());
+        inventory.setItem(++i, guiBlocks.Sand());
+        inventory.setItem(++i, guiBlocks.Crafting_Table());
+        inventory.setItem(++i, guiBlocks.Enchanting_Table());
+        inventory.setItem(++i, guiBlocks.Chest());
+        inventory.setItem(++i, guiBlocks.Enderchest());
+        inventory.setItem(++i, guiBlocks.Arrow());
     }
+
+
+    /**
+     * @param guiSkulls
+     * @param inventory
+     */
+    private void ItemSk(GuiSkulls guiSkulls, Inventory inventory){
+        int i = 0;
+
+        inventory.setItem(i, guiSkulls.Notch());
+        inventory.setItem(++i, guiSkulls.Jeff());
+        inventory.setItem(++i, guiSkulls.DinnerBone());
+        inventory.setItem(++i, guiSkulls.clonalejandro());
+        inventory.setItem(++i, guiSkulls.Magical_PvP());
+        inventory.setItem(++i, guiSkulls.md_5());
+        inventory.setItem(++i, guiSkulls.Pikachu());
+        inventory.setItem(++i, guiSkulls.Spider());
+        inventory.setItem(++i, guiSkulls.Zombie());
+        inventory.setItem(++i, guiSkulls.Chicken());
+        inventory.setItem(++i, guiSkulls.Villager());
+        inventory.setItem(++i, guiSkulls.Golem());
+        inventory.setItem(++i, guiSkulls.Snowman());
+        inventory.setItem(++i, guiSkulls.EnderDragon());
+        inventory.setItem(++i, guiSkulls.Witch());
+        inventory.setItem(++i, guiSkulls.CaveSpider());
+        inventory.setItem(++i, guiSkulls.Creeper());
+        inventory.setItem(++i, guiSkulls.Skeleton());
+        inventory.setItem(++i, guiSkulls.Whiter());
+        inventory.setItem(++i, guiSkulls.WhiterSkeleton());
+        inventory.setItem(++i, guiSkulls.Pigman());
+        inventory.setItem(++i, guiSkulls.Slime());
+        inventory.setItem(++i, guiSkulls.Magmacube());
+        inventory.setItem(++i, guiSkulls.Blaze());
+        inventory.setItem(++i, guiSkulls.Jellyfish());
+        inventory.setItem(++i, guiSkulls.Enderman());
+        inventory.setItem(++i, guiSkulls.Squid());
+        inventory.setItem(++i, guiSkulls.Herobrine());
+        inventory.setItem(++i, guiSkulls.Sun());
+        inventory.setItem(++i, guiSkulls.Mario());
+        inventory.setItem(++i, guiSkulls.Luigi());
+        inventory.setItem(++i, guiSkulls.Bowser());
+        inventory.setItem(++i, guiSkulls.Browser());
+        inventory.setItem(++i, guiSkulls.Toad());
+        inventory.setItem(++i, guiSkulls.Duck());
+        inventory.setItem(++i, guiSkulls.Globe());
+        inventory.setItem(++i, guiSkulls.Shark());
+        inventory.setItem(++i, guiSkulls.Dog());
+        inventory.setItem(++i, guiSkulls.Cat());
+        inventory.setItem(++i, guiSkulls.Ocelot());
+        inventory.setItem(++i, guiSkulls.Parrot());
+        inventory.setItem(++i, guiSkulls.Slenderman());
+        inventory.setItem(++i, guiSkulls.Rabbit());
+    }
+
 
 }
